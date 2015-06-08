@@ -14,6 +14,8 @@
 		4BD6B3431B25FFC600451E4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD6B3421B25FFC600451E4C /* Images.xcassets */; };
 		4BD6B3461B25FFC600451E4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD6B3441B25FFC600451E4C /* LaunchScreen.xib */; };
 		4BD6B3521B25FFC600451E4C /* SchedulerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B3511B25FFC600451E4C /* SchedulerAppTests.swift */; };
+		4BD6B35C1B26076B00451E4C /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B35B1B26076B00451E4C /* Avaliacao.swift */; };
+		4BD6B35E1B26076B00451E4C /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B35D1B26076B00451E4C /* Aluno.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		4BD6B34B1B25FFC600451E4C /* SchedulerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchedulerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD6B3501B25FFC600451E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BD6B3511B25FFC600451E4C /* SchedulerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerAppTests.swift; sourceTree = "<group>"; };
+		4BD6B35B1B26076B00451E4C /* Avaliacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avaliacao.swift; sourceTree = "<group>"; };
+		4BD6B35D1B26076B00451E4C /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				4BD6B3421B25FFC600451E4C /* Images.xcassets */,
 				4BD6B3441B25FFC600451E4C /* LaunchScreen.xib */,
 				4BD6B33A1B25FFC600451E4C /* SchedulerApp.xcdatamodeld */,
+				4BD6B35D1B26076B00451E4C /* Aluno.swift */,
+				4BD6B35B1B26076B00451E4C /* Avaliacao.swift */,
 				4BD6B3361B25FFC600451E4C /* Supporting Files */,
 			);
 			path = SchedulerApp;
@@ -216,8 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BD6B33E1B25FFC600451E4C /* ViewController.swift in Sources */,
+				4BD6B35E1B26076B00451E4C /* Aluno.swift in Sources */,
 				4BD6B3391B25FFC600451E4C /* AppDelegate.swift in Sources */,
 				4BD6B33C1B25FFC600451E4C /* SchedulerApp.xcdatamodeld in Sources */,
+				4BD6B35C1B26076B00451E4C /* Avaliacao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
