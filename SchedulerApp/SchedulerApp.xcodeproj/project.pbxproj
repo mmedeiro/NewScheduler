@@ -16,6 +16,7 @@
 		4BD6B3521B25FFC600451E4C /* SchedulerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B3511B25FFC600451E4C /* SchedulerAppTests.swift */; };
 		4BD6B35C1B26076B00451E4C /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B35B1B26076B00451E4C /* Avaliacao.swift */; };
 		4BD6B35E1B26076B00451E4C /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B35D1B26076B00451E4C /* Aluno.swift */; };
+		4BD6B3601B26135800451E4C /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B35F1B26135800451E4C /* EditProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		4BD6B3511B25FFC600451E4C /* SchedulerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerAppTests.swift; sourceTree = "<group>"; };
 		4BD6B35B1B26076B00451E4C /* Avaliacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avaliacao.swift; sourceTree = "<group>"; };
 		4BD6B35D1B26076B00451E4C /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
+		4BD6B35F1B26135800451E4C /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				4BD6B3381B25FFC600451E4C /* AppDelegate.swift */,
 				4BD6B33D1B25FFC600451E4C /* ViewController.swift */,
 				4BD6B33F1B25FFC600451E4C /* Main.storyboard */,
+				4BD6B35F1B26135800451E4C /* EditProfileViewController.swift */,
 				4BD6B3421B25FFC600451E4C /* Images.xcassets */,
 				4BD6B3441B25FFC600451E4C /* LaunchScreen.xib */,
 				4BD6B33A1B25FFC600451E4C /* SchedulerApp.xcdatamodeld */,
@@ -223,6 +226,7 @@
 			files = (
 				4BD6B33E1B25FFC600451E4C /* ViewController.swift in Sources */,
 				4BD6B35E1B26076B00451E4C /* Aluno.swift in Sources */,
+				4BD6B3601B26135800451E4C /* EditProfileViewController.swift in Sources */,
 				4BD6B3391B25FFC600451E4C /* AppDelegate.swift in Sources */,
 				4BD6B33C1B25FFC600451E4C /* SchedulerApp.xcdatamodeld in Sources */,
 				4BD6B35C1B26076B00451E4C /* Avaliacao.swift in Sources */,
