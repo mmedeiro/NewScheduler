@@ -13,6 +13,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var PeriodLbl: UILabel!
     @IBOutlet weak var CourseLbl: UILabel!
     @IBOutlet weak var NameLbl: UILabel!
+    @IBOutlet weak var LastHomeworkLbl: UILabel!
+    @IBOutlet weak var NextHomeworkLbl: UILabel!
     
     
     override func viewDidLoad() {
