@@ -17,6 +17,7 @@ class EditProfileViewController: UIViewController {
     
     @IBAction func SaveProfileButton(sender: AnyObject) {
         //salvar as informacoes inseridas pelo usuario e mostrar na view principal
+        
     }
     
 
@@ -36,6 +37,10 @@ class EditProfileViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        StudentNameTextField.resignFirstResponder()
     }
     
 

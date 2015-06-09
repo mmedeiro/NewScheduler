@@ -9,7 +9,7 @@
         <!--Perfil-->
         <scene sceneID="TLm-we-s4l">
             <objects>
-                <viewController id="uTq-UR-ftd" sceneMemberID="viewController">
+                <viewController id="uTq-UR-ftd" customClass="ProfileViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ey1-Hw-Q6m"/>
                         <viewControllerLayoutGuide type="bottom" id="XaT-5y-7pC"/>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QZ7-jD-699">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="teste.png" translatesAutoresizingMaskIntoConstraints="NO" id="QZ7-jD-699">
                                 <rect key="frame" x="75" y="232" width="126" height="123"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="126" id="Ewu-Ag-M94"/>
@@ -193,10 +193,15 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="CourseLbl" destination="eXL-SA-54l" id="a7T-3d-GHY"/>
+                        <outlet property="NameLbl" destination="jB1-Ez-FS6" id="2EX-hq-ta4"/>
+                        <outlet property="PeriodLbl" destination="p3h-GE-dLd" id="1bF-hA-h9f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LGq-FD-KPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1743" y="375"/>
+            <point key="canvasLocation" x="1780.5" y="421"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="BSS-Li-cpn">
@@ -210,7 +215,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l2a-Wy-27o">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="teste.png" translatesAutoresizingMaskIntoConstraints="NO" id="l2a-Wy-27o">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="4gn-7G-N89"/>
@@ -352,7 +357,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EIH-L4-W6k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2455.5" y="403"/>
+            <point key="canvasLocation" x="2715" y="421"/>
         </scene>
         <!--Tarefas-->
         <scene sceneID="gPa-WG-IBK">
@@ -388,10 +393,11 @@
             </objects>
             <point key="canvasLocation" x="1887" y="-309"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="qwq-3H-egk">
             <objects>
                 <navigationController id="HJv-cg-XVZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="FPn-Nt-VI5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nHj-CQ-0dU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -468,7 +474,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LXI-1R-W82" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1067" y="403"/>
+            <point key="canvasLocation" x="1090.5" y="421"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PrC-PY-wJq">
@@ -481,7 +487,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Zmz-vH-QCX" kind="show" id="wN4-Xj-68b"/>
+                        <segue destination="HJv-cg-XVZ" kind="relationship" relationship="viewControllers" id="nuw-vT-pda"/>
+                        <segue destination="Zmz-vH-QCX" kind="relationship" relationship="viewControllers" id="snx-au-6Xs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7Z-Lp-xpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -489,6 +496,9 @@
             <point key="canvasLocation" x="332" y="12"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="teste.png" width="64" height="64"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="vUm-9b-Ypu"/>
     </inferredMetricsTieBreakers>
