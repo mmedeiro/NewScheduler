@@ -19,6 +19,8 @@
 		4BD6B35C1B26076B00451E4C /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B35B1B26076B00451E4C /* Avaliacao.swift */; };
 		4BD6B35E1B26076B00451E4C /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B35D1B26076B00451E4C /* Aluno.swift */; };
 		4BD6B3601B26135800451E4C /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B35F1B26135800451E4C /* EditProfileViewController.swift */; };
+		6EB9CCB41B27669D00D5ED5B /* calendarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9CCB31B27669D00D5ED5B /* calendarioView.swift */; };
+		6EB9CCB61B2766AC00D5ED5B /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9CCB51B2766AC00D5ED5B /* AgendaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		4BD6B35B1B26076B00451E4C /* Avaliacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avaliacao.swift; sourceTree = "<group>"; };
 		4BD6B35D1B26076B00451E4C /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
 		4BD6B35F1B26135800451E4C /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		6EB9CCB31B27669D00D5ED5B /* calendarioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calendarioView.swift; sourceTree = "<group>"; };
+		6EB9CCB51B2766AC00D5ED5B /* AgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				4BD6B3381B25FFC600451E4C /* AppDelegate.swift */,
+				6EB9CCB31B27669D00D5ED5B /* calendarioView.swift */,
+				6EB9CCB51B2766AC00D5ED5B /* AgendaViewController.swift */,
 				4BD6B33D1B25FFC600451E4C /* ViewController.swift */,
 				4BBCDFFB1B2762770072F08B /* ProfileViewController.swift */,
 				4BD6B33F1B25FFC600451E4C /* StoryBoardIphone.storyboard */,
@@ -235,9 +241,11 @@
 				4BD6B35E1B26076B00451E4C /* Aluno.swift in Sources */,
 				4BD6B3601B26135800451E4C /* EditProfileViewController.swift in Sources */,
 				4BD6B3391B25FFC600451E4C /* AppDelegate.swift in Sources */,
+				6EB9CCB41B27669D00D5ED5B /* calendarioView.swift in Sources */,
 				4BBCDFFC1B2762770072F08B /* ProfileViewController.swift in Sources */,
 				4BD6B33C1B25FFC600451E4C /* SchedulerApp.xcdatamodeld in Sources */,
 				4BD6B35C1B26076B00451E4C /* Avaliacao.swift in Sources */,
+				6EB9CCB61B2766AC00D5ED5B /* AgendaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
