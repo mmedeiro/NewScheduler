@@ -8,6 +8,7 @@
 
 import UIKit
 import MobileCoreServices
+import CoreData
 
 class EditProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -17,6 +18,7 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var StudentPeriodTextField: UITextField!
     
     let img = UIImagePickerController()
+    var people = [NSManagedObjectContext]()
     
     @IBAction func changeImageButton(sender: UIButton) {
         
@@ -29,13 +31,22 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     
     @IBAction func SaveProfileButton(sender: AnyObject) {
         //salvar as informacoes inseridas pelo usuario e mostrar na view principal
+       
+        var aluno = AlunoManager.sharedInstance.novoAluno()
+        aluno.nome = StudentNameTextField.text
+        aluno.curso = StudentCourseTextField.text
         
+        //===============TERMINAR
+        
+        AlunoManager.sharedInstance.salvar()
+        self.navigationController?.popViewControllerAnimated(true)
+
     }
     
 
     @IBAction func CancelEditProfileButton(sender: AnyObject) {
-        
-        dismissViewControllerAnimated(true, completion: nil)
+        self.navigationController?.popToRootViewControllerAnimated(true)
+        println("foi")
     }
     
     override func viewDidLoad() {
@@ -70,8 +81,7 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    
+
 
     /*
     // MARK: - Navigation

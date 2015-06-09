@@ -5,6 +5,7 @@
         <attribute name="materia" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="semestre" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Avaliacao" inverseName="relationship" inverseEntity="Avaliacao" syncable="YES"/>
     </entity>
     <entity name="Avaliacao" representedClassName="PRODUCT_MODULE_NAME.Avaliacao" syncable="YES">
         <attribute name="dataAvaliacao" optional="YES" attributeType="Date" syncable="YES"/>
@@ -12,9 +13,10 @@
         <attribute name="notaAvaliacao" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="pesoAvaliacao" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="tipoAvaliacao" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aluno" inverseName="relationship" inverseEntity="Aluno" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Aluno" positionX="-63" positionY="-18" width="128" height="105"/>
-        <element name="Avaliacao" positionX="162" positionY="-12" width="128" height="120"/>
+        <element name="Aluno" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="Avaliacao" positionX="162" positionY="-12" width="128" height="133"/>
     </elements>
 </model>
