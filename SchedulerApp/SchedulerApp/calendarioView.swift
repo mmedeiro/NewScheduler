@@ -181,25 +181,5 @@ class calendarioView: UIView, UIGestureRecognizerDelegate{
             }
         })
     }
-//    -(void)myAnimation:(NSString *)subType{// faz uma bela animação
-//    CATransition *animation =[CATransition animation];
-//    [animation setDelegate:self];
-//    [animation setType:kCATransitionPush];
-//    [animation setSubtype:subType];
-//    [animation setDuration:.5];
-//    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
-//    [weekView.layer addAnimation:animation forKey:kCATransition];
-//    [self updateDay:0];
-//    }
-//    
-//    -(void)animationUpdateEnd:(int)sinal{//termina a bela animação
-//    for (UIButton *botao in weekArray) {
-//    [botao setTransform:CGAffineTransformMakeTranslation((400*sinal), 0)];
-//    }
-//    [UIView animateWithDuration:.2 animations:^{
-//    for (UIButton *botao in weekArray) {
-//    [botao setTransform:CGAffineTransformMakeTranslation(0, 0)];
-//    }
-//    }];
-//    }
+
 }
