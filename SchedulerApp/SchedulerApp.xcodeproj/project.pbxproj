@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BBCDFFA1B27570E0072F08B /* StoryboardIpad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCDFF91B27570E0072F08B /* StoryboardIpad.storyboard */; };
 		4BD6B3391B25FFC600451E4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B3381B25FFC600451E4C /* AppDelegate.swift */; };
 		4BD6B33C1B25FFC600451E4C /* SchedulerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B33A1B25FFC600451E4C /* SchedulerApp.xcdatamodeld */; };
 		4BD6B33E1B25FFC600451E4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B33D1B25FFC600451E4C /* ViewController.swift */; };
-		4BD6B3411B25FFC600451E4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD6B33F1B25FFC600451E4C /* Main.storyboard */; };
+		4BD6B3411B25FFC600451E4C /* StoryBoardIphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD6B33F1B25FFC600451E4C /* StoryBoardIphone.storyboard */; };
 		4BD6B3431B25FFC600451E4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD6B3421B25FFC600451E4C /* Images.xcassets */; };
 		4BD6B3461B25FFC600451E4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD6B3441B25FFC600451E4C /* LaunchScreen.xib */; };
 		4BD6B3521B25FFC600451E4C /* SchedulerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B3511B25FFC600451E4C /* SchedulerAppTests.swift */; };
@@ -30,12 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4BBCDFF91B27570E0072F08B /* StoryboardIpad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardIpad.storyboard; sourceTree = "<group>"; };
 		4BD6B3331B25FFC600451E4C /* SchedulerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchedulerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD6B3371B25FFC600451E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BD6B3381B25FFC600451E4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BD6B33B1B25FFC600451E4C /* SchedulerApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SchedulerApp.xcdatamodel; sourceTree = "<group>"; };
 		4BD6B33D1B25FFC600451E4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4BD6B3401B25FFC600451E4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BD6B3401B25FFC600451E4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StoryBoardIphone.storyboard; sourceTree = "<group>"; };
 		4BD6B3421B25FFC600451E4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4BD6B3451B25FFC600451E4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4BD6B34B1B25FFC600451E4C /* SchedulerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchedulerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +89,8 @@
 			children = (
 				4BD6B3381B25FFC600451E4C /* AppDelegate.swift */,
 				4BD6B33D1B25FFC600451E4C /* ViewController.swift */,
-				4BD6B33F1B25FFC600451E4C /* Main.storyboard */,
+				4BD6B33F1B25FFC600451E4C /* StoryBoardIphone.storyboard */,
+				4BBCDFF91B27570E0072F08B /* StoryboardIpad.storyboard */,
 				4BD6B35F1B26135800451E4C /* EditProfileViewController.swift */,
 				4BD6B3421B25FFC600451E4C /* Images.xcassets */,
 				4BD6B3441B25FFC600451E4C /* LaunchScreen.xib */,
@@ -204,9 +207,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD6B3411B25FFC600451E4C /* Main.storyboard in Resources */,
+				4BD6B3411B25FFC600451E4C /* StoryBoardIphone.storyboard in Resources */,
 				4BD6B3461B25FFC600451E4C /* LaunchScreen.xib in Resources */,
 				4BD6B3431B25FFC600451E4C /* Images.xcassets in Resources */,
+				4BBCDFFA1B27570E0072F08B /* StoryboardIpad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,12 +256,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4BD6B33F1B25FFC600451E4C /* Main.storyboard */ = {
+		4BD6B33F1B25FFC600451E4C /* StoryBoardIphone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4BD6B3401B25FFC600451E4C /* Base */,
 			);
-			name = Main.storyboard;
+			name = StoryBoardIphone.storyboard;
 			sourceTree = "<group>";
 		};
 		4BD6B3441B25FFC600451E4C /* LaunchScreen.xib */ = {
@@ -425,6 +429,7 @@
 				4BD6B3571B25FFC600451E4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BD6B3581B25FFC600451E4C /* Build configuration list for PBXNativeTarget "SchedulerAppTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +438,7 @@
 				4BD6B35A1B25FFC600451E4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
