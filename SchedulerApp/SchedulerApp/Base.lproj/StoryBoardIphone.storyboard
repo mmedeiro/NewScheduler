@@ -195,7 +195,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="CourseLbl" destination="eXL-SA-54l" id="a7T-3d-GHY"/>
+                        <outlet property="LastHomeworkLbl" destination="aYP-q9-d4U" id="rT5-AE-3U5"/>
                         <outlet property="NameLbl" destination="jB1-Ez-FS6" id="2EX-hq-ta4"/>
+                        <outlet property="NextHomeworkLbl" destination="6df-GG-HrM" id="YIo-6S-XBK"/>
                         <outlet property="PeriodLbl" destination="p3h-GE-dLd" id="1bF-hA-h9f"/>
                     </connections>
                 </viewController>
