@@ -7,13 +7,25 @@
 //
 
 import UIKit
+import MobileCoreServices
 
-class EditProfileViewController: UIViewController {
+class EditProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    @IBOutlet weak var ProfileImage: UIImageView!
+    @IBOutlet var ProfileImage: UIImageView!
     @IBOutlet weak var StudentNameTextField: UITextField!
     @IBOutlet weak var StudentCourseTextField: UITextField!
     @IBOutlet weak var StudentPeriodTextField: UITextField!
+    
+    let img = UIImagePickerController()
+    
+    @IBAction func changeImageButton(sender: UIButton) {
+        
+            img.allowsEditing = false
+            img.sourceType = .PhotoLibrary
+            
+            presentViewController(img, animated: true, completion: nil)
+    }
+    
     
     @IBAction func SaveProfileButton(sender: AnyObject) {
         //salvar as informacoes inseridas pelo usuario e mostrar na view principal
@@ -32,6 +44,8 @@ class EditProfileViewController: UIViewController {
         StudentNameTextField.placeholder = "Nome do Aluno"
         StudentCourseTextField.placeholder = "Curso"
         StudentPeriodTextField.placeholder = "Semestre atual"
+        
+        img.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,6 +56,21 @@ class EditProfileViewController: UIViewController {
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         StudentNameTextField.resignFirstResponder()
     }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            ProfileImage.contentMode = .ScaleAspectFit
+            ProfileImage.image = pickedImage
+        }
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     
 
     /*

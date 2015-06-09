@@ -326,9 +326,6 @@
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="99.5" y="374" width="600" height="30"/>
-                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sT6-HL-3so">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
@@ -344,8 +341,7 @@
                                         <exclude reference="sWt-bg-dz6"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="99" y="329" width="600" height="30"/>
+                                <variation key="widthClass=regular">
                                     <mask key="constraints">
                                         <include reference="sWt-bg-dz6"/>
                                     </mask>
