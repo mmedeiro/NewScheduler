@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TtN-lu-Mpv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mQO-hG-ZHr">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="teste.png" translatesAutoresizingMaskIntoConstraints="NO" id="QZ7-jD-699">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="teste.png" translatesAutoresizingMaskIntoConstraints="NO" id="QZ7-jD-699">
                                 <rect key="frame" x="75" y="232" width="126" height="123"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="126" id="Ewu-Ag-M94"/>
@@ -201,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LGq-FD-KPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1780.5" y="421"/>
+            <point key="canvasLocation" x="1941" y="381"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="BSS-Li-cpn">
@@ -250,7 +250,6 @@
                                 </state>
                                 <connections>
                                     <action selector="CancelEditProfileButton:" destination="TtN-lu-Mpv" eventType="touchUpInside" id="iJa-Cq-4av"/>
-                                    <segue destination="uTq-UR-ftd" kind="show" id="vUm-9b-Ypu"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YvY-4B-FJh">
@@ -357,7 +356,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EIH-L4-W6k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2715" y="421"/>
+            <point key="canvasLocation" x="2649" y="390.75"/>
         </scene>
         <!--Tarefas-->
         <scene sceneID="gPa-WG-IBK">
@@ -422,13 +421,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vXf-K6-7mB">
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vXf-K6-7mB">
                                 <rect key="frame" x="0.0" y="145" width="600" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="455476554.25400001">
                                     <!--2015-06-08 17:15:54 +0000-->
                                 </date>
                             </datePicker>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ugs-aH-k9U">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ugs-aH-k9U">
                                 <rect key="frame" x="252" y="379" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="WuD-QG-QXE"/>
@@ -436,7 +435,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6O-EZ-E1J">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6O-EZ-E1J">
                                 <rect key="frame" x="277" y="479" width="43" height="30"/>
                                 <state key="normal" title="Salvar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -469,12 +468,30 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="uTq-UR-ftd" kind="show" id="vMF-Kh-hDg"/>
+                        <segue destination="uTq-UR-ftd" kind="relationship" relationship="rootViewController" id="msa-6O-QYZ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LXI-1R-W82" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1090.5" y="421"/>
+            <point key="canvasLocation" x="1126.5" y="375.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jxa-Hv-8et">
+            <objects>
+                <viewController id="yay-bW-oCK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FgU-tY-xvB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tse-f7-d0N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qsq-LH-pMx">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="BeP-gN-BkB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="poQ-bE-15m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1270.5" y="1120.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PrC-PY-wJq">
@@ -487,19 +504,17 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="HJv-cg-XVZ" kind="relationship" relationship="viewControllers" id="nuw-vT-pda"/>
-                        <segue destination="Zmz-vH-QCX" kind="relationship" relationship="viewControllers" id="snx-au-6Xs"/>
+                        <segue destination="HJv-cg-XVZ" kind="relationship" relationship="viewControllers" id="2bE-Mm-tYy"/>
+                        <segue destination="Zmz-vH-QCX" kind="relationship" relationship="viewControllers" id="JuA-2t-LpO"/>
+                        <segue destination="yay-bW-oCK" kind="relationship" relationship="viewControllers" id="dHF-37-dl7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7Z-Lp-xpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="332" y="12"/>
+            <point key="canvasLocation" x="37.5" y="24"/>
         </scene>
     </scenes>
     <resources>
         <image name="teste.png" width="64" height="64"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="vUm-9b-Ypu"/>
-    </inferredMetricsTieBreakers>
 </document>
