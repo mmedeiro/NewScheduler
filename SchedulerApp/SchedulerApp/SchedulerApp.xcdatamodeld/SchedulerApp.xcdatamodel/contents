@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Aluno" representedClassName="PRODUCT_MODULE_NAME.Aluno" syncable="YES">
+    <entity name="Aluno" representedClassName="Aluno" syncable="YES">
         <attribute name="curso" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="semestre" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="possuiMateria" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Materia" inverseName="pertenceAluno" inverseEntity="Materia" syncable="YES"/>
     </entity>
-    <entity name="Avaliacao" representedClassName="PRODUCT_MODULE_NAME.Avaliacao" syncable="YES">
+    <entity name="Avaliacao" representedClassName="Avaliacao" syncable="YES">
         <attribute name="dataAvaliacao" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="notaAvaliacao" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="pesoAvaliacao" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="tipoAvaliacao" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="pertenceMateria" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Materia" inverseName="possuiAvaliacao" inverseEntity="Materia" syncable="YES"/>
     </entity>
-    <entity name="Materia" representedClassName="PRODUCT_MODULE_NAME.Materia" syncable="YES">
+    <entity name="Materia" representedClassName="Materia" syncable="YES">
         <attribute name="nomeMateria" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="pertenceAluno" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aluno" inverseName="possuiMateria" inverseEntity="Aluno" syncable="YES"/>
         <relationship name="possuiAvaliacao" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Avaliacao" inverseName="pertenceMateria" inverseEntity="Avaliacao" syncable="YES"/>

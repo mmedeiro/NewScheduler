@@ -15,7 +15,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var NameLbl: UILabel!
     @IBOutlet weak var LastHomeworkLbl: UILabel!
     @IBOutlet weak var NextHomeworkLbl: UILabel!
-    
+    var students: Array<Aluno>?
+    var student: Aluno?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,18 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(animated: Bool) {
+        students = AlunoManager.sharedInstance.Aluno()
+        if students?.count != 0 {
+            student = students?[0]
+            if let s = student {
+                PeriodLbl.text = "\(s.semestre)"
+                CourseLbl.text = s.curso
+                NameLbl.text = s.nome
+            }
+            
+        }
+    }
 
     /*
     // MARK: - Navigation
