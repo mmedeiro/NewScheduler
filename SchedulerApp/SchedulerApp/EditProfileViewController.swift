@@ -66,7 +66,7 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        StudentNameTextField.resignFirstResponder()
+        self.view .endEditing(true)
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
