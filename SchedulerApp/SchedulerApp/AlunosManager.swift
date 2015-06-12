@@ -20,7 +20,7 @@ public class AlunoManager {
     
     private init(){}
     
-    func novoAluno() -> Aluno
+    func novoAluno()->Aluno
     {
         return NSEntityDescription.insertNewObjectForEntityForName(AlunoManager.entityName, inManagedObjectContext: managedContext) as! Aluno
     }

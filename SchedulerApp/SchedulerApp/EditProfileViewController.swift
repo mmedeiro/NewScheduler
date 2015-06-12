@@ -33,8 +33,8 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         //salvar as informacoes inseridas pelo usuario e mostrar na view principal
        
         var aluno = AlunoManager.sharedInstance.novoAluno()
-        aluno.nome = StudentNameTextField.text
-        aluno.curso = StudentCourseTextField.text
+//        aluno.nome = StudentNameTextField.text
+//        aluno.curso = StudentCourseTextField.text
         
         //===============TERMINAR
         

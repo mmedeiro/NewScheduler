@@ -11,6 +11,9 @@
 		4BBCDFFC1B2762770072F08B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCDFFB1B2762770072F08B /* ProfileViewController.swift */; };
 		4BBCDFFE1B277B0A0072F08B /* AlunosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCDFFD1B277B0A0072F08B /* AlunosManager.swift */; };
 		4BBCE0001B277E1F0072F08B /* AvaliacaoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCDFFF1B277E1F0072F08B /* AvaliacaoManager.swift */; };
+		4BCFC4D91B2B0725007E85F5 /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCFC4D81B2B0725007E85F5 /* Aluno.swift */; };
+		4BCFC4DD1B2B09E7007E85F5 /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCFC4DC1B2B09E7007E85F5 /* Materia.swift */; };
+		4BCFC4DF1B2B09E8007E85F5 /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCFC4DE1B2B09E8007E85F5 /* Avaliacao.swift */; };
 		4BD6B3391B25FFC600451E4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B3381B25FFC600451E4C /* AppDelegate.swift */; };
 		4BD6B33C1B25FFC600451E4C /* SchedulerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B33A1B25FFC600451E4C /* SchedulerApp.xcdatamodeld */; };
 		4BD6B33E1B25FFC600451E4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B33D1B25FFC600451E4C /* ViewController.swift */; };
@@ -18,8 +21,6 @@
 		4BD6B3431B25FFC600451E4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD6B3421B25FFC600451E4C /* Images.xcassets */; };
 		4BD6B3461B25FFC600451E4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD6B3441B25FFC600451E4C /* LaunchScreen.xib */; };
 		4BD6B3521B25FFC600451E4C /* SchedulerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B3511B25FFC600451E4C /* SchedulerAppTests.swift */; };
-		4BD6B35C1B26076B00451E4C /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B35B1B26076B00451E4C /* Avaliacao.swift */; };
-		4BD6B35E1B26076B00451E4C /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B35D1B26076B00451E4C /* Aluno.swift */; };
 		4BD6B3601B26135800451E4C /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B35F1B26135800451E4C /* EditProfileViewController.swift */; };
 		6EB9CCB41B27669D00D5ED5B /* calendarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9CCB31B27669D00D5ED5B /* calendarioView.swift */; };
 		6EB9CCB61B2766AC00D5ED5B /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9CCB51B2766AC00D5ED5B /* AgendaViewController.swift */; };
@@ -40,6 +41,9 @@
 		4BBCDFFB1B2762770072F08B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4BBCDFFD1B277B0A0072F08B /* AlunosManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunosManager.swift; sourceTree = "<group>"; };
 		4BBCDFFF1B277E1F0072F08B /* AvaliacaoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvaliacaoManager.swift; sourceTree = "<group>"; };
+		4BCFC4D81B2B0725007E85F5 /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
+		4BCFC4DC1B2B09E7007E85F5 /* Materia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
+		4BCFC4DE1B2B09E8007E85F5 /* Avaliacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avaliacao.swift; sourceTree = "<group>"; };
 		4BD6B3331B25FFC600451E4C /* SchedulerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchedulerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD6B3371B25FFC600451E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BD6B3381B25FFC600451E4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,8 +55,6 @@
 		4BD6B34B1B25FFC600451E4C /* SchedulerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchedulerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD6B3501B25FFC600451E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BD6B3511B25FFC600451E4C /* SchedulerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerAppTests.swift; sourceTree = "<group>"; };
-		4BD6B35B1B26076B00451E4C /* Avaliacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avaliacao.swift; sourceTree = "<group>"; };
-		4BD6B35D1B26076B00451E4C /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
 		4BD6B35F1B26135800451E4C /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		6EB9CCB31B27669D00D5ED5B /* calendarioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calendarioView.swift; sourceTree = "<group>"; };
 		6EB9CCB51B2766AC00D5ED5B /* AgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BCFC4E01B2B0A24007E85F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BCFC4D81B2B0725007E85F5 /* Aluno.swift */,
+				4BCFC4DE1B2B09E8007E85F5 /* Avaliacao.swift */,
+				4BCFC4DC1B2B09E7007E85F5 /* Materia.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		4BD6B32A1B25FFC600451E4C = {
 			isa = PBXGroup;
 			children = (
@@ -106,12 +118,11 @@
 				4BBCDFF91B27570E0072F08B /* StoryboardIpad.storyboard */,
 				4BD6B35F1B26135800451E4C /* EditProfileViewController.swift */,
 				4BBCDFFD1B277B0A0072F08B /* AlunosManager.swift */,
+				4BCFC4E01B2B0A24007E85F5 /* Models */,
 				4BD6B3421B25FFC600451E4C /* Images.xcassets */,
 				4BD6B3441B25FFC600451E4C /* LaunchScreen.xib */,
 				4BD6B33A1B25FFC600451E4C /* SchedulerApp.xcdatamodeld */,
 				4BBCDFFF1B277E1F0072F08B /* AvaliacaoManager.swift */,
-				4BD6B35D1B26076B00451E4C /* Aluno.swift */,
-				4BD6B35B1B26076B00451E4C /* Avaliacao.swift */,
 				4BD6B3361B25FFC600451E4C /* Supporting Files */,
 			);
 			path = SchedulerApp;
@@ -244,15 +255,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BD6B33E1B25FFC600451E4C /* ViewController.swift in Sources */,
-				4BD6B35E1B26076B00451E4C /* Aluno.swift in Sources */,
 				4BD6B3601B26135800451E4C /* EditProfileViewController.swift in Sources */,
 				4BBCDFFE1B277B0A0072F08B /* AlunosManager.swift in Sources */,
 				4BBCE0001B277E1F0072F08B /* AvaliacaoManager.swift in Sources */,
 				4BD6B3391B25FFC600451E4C /* AppDelegate.swift in Sources */,
 				6EB9CCB41B27669D00D5ED5B /* calendarioView.swift in Sources */,
 				4BBCDFFC1B2762770072F08B /* ProfileViewController.swift in Sources */,
+				4BCFC4DF1B2B09E8007E85F5 /* Avaliacao.swift in Sources */,
+				4BCFC4D91B2B0725007E85F5 /* Aluno.swift in Sources */,
+				4BCFC4DD1B2B09E7007E85F5 /* Materia.swift in Sources */,
 				4BD6B33C1B25FFC600451E4C /* SchedulerApp.xcdatamodeld in Sources */,
-				4BD6B35C1B26076B00451E4C /* Avaliacao.swift in Sources */,
 				6EB9CCB61B2766AC00D5ED5B /* AgendaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

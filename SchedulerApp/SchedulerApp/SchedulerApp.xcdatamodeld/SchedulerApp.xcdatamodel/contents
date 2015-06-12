@@ -2,21 +2,25 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Aluno" representedClassName="PRODUCT_MODULE_NAME.Aluno" syncable="YES">
         <attribute name="curso" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="materia" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="semestre" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Avaliacao" inverseName="relationship" inverseEntity="Avaliacao" syncable="YES"/>
+        <relationship name="possuiMateria" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Materia" inverseName="pertenceAluno" inverseEntity="Materia" syncable="YES"/>
     </entity>
     <entity name="Avaliacao" representedClassName="PRODUCT_MODULE_NAME.Avaliacao" syncable="YES">
         <attribute name="dataAvaliacao" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="horarioAvaliacao" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="notaAvaliacao" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="pesoAvaliacao" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="tipoAvaliacao" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aluno" inverseName="relationship" inverseEntity="Aluno" syncable="YES"/>
+        <relationship name="pertenceMateria" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Materia" inverseName="possuiAvaliacao" inverseEntity="Materia" syncable="YES"/>
+    </entity>
+    <entity name="Materia" representedClassName="PRODUCT_MODULE_NAME.Materia" syncable="YES">
+        <attribute name="nomeMateria" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pertenceAluno" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aluno" inverseName="possuiMateria" inverseEntity="Aluno" syncable="YES"/>
+        <relationship name="possuiAvaliacao" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Avaliacao" inverseName="pertenceMateria" inverseEntity="Avaliacao" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Aluno" positionX="-63" positionY="-18" width="128" height="118"/>
-        <element name="Avaliacao" positionX="162" positionY="-12" width="128" height="133"/>
+        <element name="Aluno" positionX="-198" positionY="-13" width="128" height="103"/>
+        <element name="Avaliacao" positionX="340" positionY="-64" width="128" height="118"/>
+        <element name="Materia" positionX="45" positionY="-139" width="128" height="88"/>
     </elements>
 </model>
