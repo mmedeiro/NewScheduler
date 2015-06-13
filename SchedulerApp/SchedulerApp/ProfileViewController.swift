@@ -32,7 +32,7 @@ class ProfileViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         students = AlunoManager.sharedInstance.Aluno()
         if students?.count != 0 {
-            student = students?[0]
+            student = students?.last
             if let s = student {
                 PeriodLbl.text = "\(s.semestre)"
                 CourseLbl.text = s.curso
