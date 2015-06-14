@@ -26,6 +26,8 @@
 		4BD6B3521B25FFC600451E4C /* SchedulerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B3511B25FFC600451E4C /* SchedulerAppTests.swift */; };
 		4BD6B3601B26135800451E4C /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6B35F1B26135800451E4C /* EditProfileViewController.swift */; };
 		4BD739F81B2D1CD400509E04 /* testeSalvarMateria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD739F71B2D1CD400509E04 /* testeSalvarMateria.swift */; };
+		4BD739FA1B2D209100509E04 /* DadosUsuárioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD739F91B2D209100509E04 /* DadosUsuárioTableViewController.swift */; };
+		4BD739FC1B2D26FB00509E04 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD739FB1B2D26FB00509E04 /* FirstTableViewController.swift */; };
 		4BEC1C7F1B2B5E0200F8C024 /* AdicionarTarefaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEC1C7E1B2B5E0200F8C024 /* AdicionarTarefaTableViewController.swift */; };
 		6EB9CCB41B27669D00D5ED5B /* calendarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9CCB31B27669D00D5ED5B /* calendarioView.swift */; };
 		6EB9CCB61B2766AC00D5ED5B /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9CCB51B2766AC00D5ED5B /* AgendaViewController.swift */; };
@@ -65,6 +67,8 @@
 		4BD6B3511B25FFC600451E4C /* SchedulerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerAppTests.swift; sourceTree = "<group>"; };
 		4BD6B35F1B26135800451E4C /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		4BD739F71B2D1CD400509E04 /* testeSalvarMateria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testeSalvarMateria.swift; sourceTree = "<group>"; };
+		4BD739F91B2D209100509E04 /* DadosUsuárioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DadosUsuárioTableViewController.swift"; sourceTree = "<group>"; };
+		4BD739FB1B2D26FB00509E04 /* FirstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
 		4BEC1C7E1B2B5E0200F8C024 /* AdicionarTarefaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdicionarTarefaTableViewController.swift; sourceTree = "<group>"; };
 		6EB9CCB31B27669D00D5ED5B /* calendarioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calendarioView.swift; sourceTree = "<group>"; };
 		6EB9CCB51B2766AC00D5ED5B /* AgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
@@ -173,10 +177,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4BD739FD1B2D2AEE00509E04 /* Usuário */ = {
+			isa = PBXGroup;
+			children = (
+				4BD739F91B2D209100509E04 /* DadosUsuárioTableViewController.swift */,
+				4BD739FB1B2D26FB00509E04 /* FirstTableViewController.swift */,
+			);
+			name = "Usuário";
+			sourceTree = "<group>";
+		};
 		4BEC1C731B2B4C5900F8C024 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
 				4BD6B33F1B25FFC600451E4C /* StoryBoardIphone.storyboard */,
+				4BD739FD1B2D2AEE00509E04 /* Usuário */,
 				4BD739F71B2D1CD400509E04 /* testeSalvarMateria.swift */,
 				4BCDA6BC1B2BC4C5003D8B01 /* MateriasTableViewController.swift */,
 				4BBCDFF91B27570E0072F08B /* StoryboardIpad.storyboard */,
@@ -288,6 +302,7 @@
 				4BD6B33E1B25FFC600451E4C /* ViewController.swift in Sources */,
 				4BEC1C7F1B2B5E0200F8C024 /* AdicionarTarefaTableViewController.swift in Sources */,
 				4BD6B3601B26135800451E4C /* EditProfileViewController.swift in Sources */,
+				4BD739FC1B2D26FB00509E04 /* FirstTableViewController.swift in Sources */,
 				4BBCDFFE1B277B0A0072F08B /* AlunoManager.swift in Sources */,
 				4BBCE0001B277E1F0072F08B /* AvaliacaoManager.swift in Sources */,
 				4BD6B3391B25FFC600451E4C /* AppDelegate.swift in Sources */,
@@ -299,6 +314,7 @@
 				4BCDA6BD1B2BC4C5003D8B01 /* MateriasTableViewController.swift in Sources */,
 				4BCFC4D91B2B0725007E85F5 /* Aluno.swift in Sources */,
 				4BCFC4DD1B2B09E7007E85F5 /* Materia.swift in Sources */,
+				4BD739FA1B2D209100509E04 /* DadosUsuárioTableViewController.swift in Sources */,
 				4BD6B33C1B25FFC600451E4C /* SchedulerApp.xcdatamodeld in Sources */,
 				6EB9CCB61B2766AC00D5ED5B /* AgendaViewController.swift in Sources */,
 				4BD739F81B2D1CD400509E04 /* testeSalvarMateria.swift in Sources */,
