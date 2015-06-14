@@ -30,17 +30,18 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     
     
     @IBAction func SaveProfileButton(sender: AnyObject) {
+       
         //salvar as informacoes inseridas pelo usuario e mostrar na view principal
        
         var aluno = AlunoManager.sharedInstance.novoAluno()
         aluno.nome = StudentNameTextField.text
         aluno.curso = StudentCourseTextField.text
         aluno.semestre = (StudentPeriodTextField.text).toInt()!
-        
-        //===============TERMINAR
-        
+
         AlunoManager.sharedInstance.salvar()
         self.navigationController?.popViewControllerAnimated(true)
+        
+        println("foooooooi\(AlunoManager.sharedInstance.salvar())")
 
     }
     

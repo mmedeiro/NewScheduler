@@ -24,20 +24,29 @@ class MateriasTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        LabelMaterias.hidden = true
-    }
-    
-    override func viewDidAppear(animated: Bool) {
+       // LabelMaterias.hidden = true
         
-        materias = MateriaManager.sharedInstance.Materia()
-        if materias?.count != 0 {
-            if let m = materia {
-                LabelMaterias.text = m.nomeMateria
-            }
-        }
-    }
+//                materias = MateriaManager.sharedInstance.Materia()
+//                if materias?.count != 0 {
+//                    if let m = materia {
+//                        LabelMaterias.text = m.nomeMateria
+//                    }
+        
+                    LabelMaterias.text = materia?.nomeMateria
 
-    override func didReceiveMemoryWarning() {
+    }
+//    
+//    override func viewDidAppear(animated: Bool) {
+//        
+////        materias = MateriaManager.sharedInstance.Materia()
+////        if materias?.count != 0 {
+////            if let m = materia {
+////                LabelMaterias.text = m.nomeMateria
+////            }
+//        }
+//    }
+
+     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
