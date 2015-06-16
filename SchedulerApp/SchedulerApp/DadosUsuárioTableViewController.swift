@@ -12,7 +12,9 @@ import CoreData
 
 class DadosUsua_rioTableViewController: UITableViewController, UITextFieldDelegate, UINavigationControllerDelegate {
 
-    
+    var nome: String?
+    var curso: String?
+    var semestre: String?
     
     @IBOutlet weak var nomeUsuarioTextField: UITextField!
     @IBOutlet weak var cursoUsuarioTextField: UITextField!
@@ -34,16 +36,31 @@ class DadosUsua_rioTableViewController: UITableViewController, UITextFieldDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var ntc = NSNotificationCenter.defaultCenter()
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
          self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
         nomeUsuarioTextField.placeholder = "Nome do aluno"
         cursoUsuarioTextField.placeholder = "Curso"
         semestreUsuarioTextField.placeholder = "Semestre Atual"
+        if nome != nil{
+            nomeUsuarioTextField.text = nome
+            cursoUsuarioTextField.text = curso
+            semestreUsuarioTextField.text = semestre
+        }
+        if semestreUsuarioTextField.text != nil {
+            if semestreUsuarioTextField.text.lowercaseString.rangeOfString("semestre") != nil{
+                semestreUsuarioTextField.text = semestreUsuarioTextField.text[0]
+            }
+        }
+        else{
+            semestreUsuarioTextField.text = "0"
+        }
         
         
     }
@@ -112,4 +129,18 @@ class DadosUsua_rioTableViewController: UITableViewController, UITextFieldDelega
     }
     */
 
+}
+extension String {
+    
+    subscript (i: Int) -> Character {
+        return self[advance(self.startIndex, i)]
+    }
+    
+    subscript (i: Int) -> String {
+        return String(self[i] as Character)
+    }
+    
+    subscript (r: Range<Int>) -> String {
+        return substringWithRange(Range(start: advance(startIndex, r.startIndex), end: advance(startIndex, r.endIndex)))
+    }
 }

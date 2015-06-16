@@ -395,6 +395,7 @@
             <objects>
                 <tableViewController id="uhd-vJ-sJ9" customClass="FirstTableViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="pmd-o2-Z1f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -405,7 +406,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gma-dp-XHL" id="HAA-eY-6Tf">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcP-Hl-kBt">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcP-Hl-kBt">
                                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -444,7 +445,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VEi-gd-NZe" id="EjA-Mb-Rt5">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzG-yo-dTv">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzG-yo-dTv">
                                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -483,7 +484,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5wo-w4-n5T" id="6A6-p4-VHW">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnX-8B-a4x">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semestre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnX-8B-a4x">
                                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -744,10 +745,11 @@
             <objects>
                 <tableViewController id="zYo-dt-0t0" customClass="DadosUsua_rioTableViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="EE7-5h-cEP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Zy-VW-tAA">
-                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <rect key="frame" x="0.0" y="241" width="600" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Salvar">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -824,8 +826,8 @@
                                                     <exclude reference="weY-Eq-POQ"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="ttc-5O-2oo"/>
                                                     <exclude reference="W9f-nE-gfZ"/>
+                                                    <exclude reference="ttc-5O-2oo"/>
                                                     <exclude reference="zgV-Qd-7qm"/>
                                                 </mask>
                                             </variation>
@@ -834,8 +836,8 @@
                                                     <include reference="weY-Eq-POQ"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="ttc-5O-2oo"/>
                                                     <include reference="W9f-nE-gfZ"/>
+                                                    <include reference="ttc-5O-2oo"/>
                                                     <include reference="zgV-Qd-7qm"/>
                                                 </mask>
                                             </variation>
@@ -865,9 +867,9 @@
                                                     <exclude reference="OTA-iu-AaK"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="f4X-EY-HWK"/>
                                                     <exclude reference="H5A-ky-IXn"/>
                                                     <exclude reference="aiU-I5-yIj"/>
+                                                    <exclude reference="f4X-EY-HWK"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
@@ -875,9 +877,9 @@
                                                     <include reference="OTA-iu-AaK"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="f4X-EY-HWK"/>
                                                     <include reference="H5A-ky-IXn"/>
                                                     <include reference="aiU-I5-yIj"/>
+                                                    <include reference="f4X-EY-HWK"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -910,6 +912,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5cx-ZT-H8H"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Alw-qS-0a8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOT-IW-HkY">

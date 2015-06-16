@@ -19,6 +19,8 @@ class FirstTableViewController: UITableViewController, UINavigationBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -92,14 +94,20 @@ class FirstTableViewController: UITableViewController, UINavigationBarDelegate {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var dest = segue.destinationViewController as! DadosUsua_rioTableViewController
+        
+        dest.nome = nomeAlunoLabel.text
+        dest.curso = cursoAlunoLabel.text
+        if semestreAlunoLabel.text != "Semestre"{
+            dest.semestre = semestreAlunoLabel.text
+        }
+        
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
     }
-    */
 
 }

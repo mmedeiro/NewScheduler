@@ -45,6 +45,7 @@
             <objects>
                 <tableViewController id="Z9G-Dm-U0d" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="JSB-im-NAM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -144,6 +145,7 @@
             <objects>
                 <tableViewController id="m1b-7B-WAu" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="67J-2q-6wm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -214,8 +216,8 @@
                                                     <exclude reference="ESP-wB-I0K"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="HQd-93-azP"/>
                                                     <exclude reference="2q4-y8-peF"/>
+                                                    <exclude reference="HQd-93-azP"/>
                                                     <exclude reference="Tfh-jL-Yh1"/>
                                                 </mask>
                                             </variation>
@@ -224,8 +226,8 @@
                                                     <include reference="ESP-wB-I0K"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="HQd-93-azP"/>
                                                     <include reference="2q4-y8-peF"/>
+                                                    <include reference="HQd-93-azP"/>
                                                     <include reference="Tfh-jL-Yh1"/>
                                                 </mask>
                                             </variation>
@@ -255,9 +257,9 @@
                                                     <exclude reference="NVW-dN-Iq7"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="zJo-By-kG7"/>
                                                     <exclude reference="bxy-ml-MJ7"/>
                                                     <exclude reference="lnX-kk-dP8"/>
+                                                    <exclude reference="zJo-By-kG7"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=regular">
@@ -265,9 +267,9 @@
                                                     <include reference="NVW-dN-Iq7"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="zJo-By-kG7"/>
                                                     <include reference="bxy-ml-MJ7"/>
                                                     <include reference="lnX-kk-dP8"/>
+                                                    <include reference="zJo-By-kG7"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>

@@ -15,7 +15,7 @@
     </entity>
     <entity name="Materia" representedClassName="Materia" syncable="YES">
         <attribute name="nomeMateria" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="pertenceAluno" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aluno" inverseName="possuiMateria" inverseEntity="Aluno" syncable="YES"/>
+        <relationship name="pertenceAluno" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Aluno" inverseName="possuiMateria" inverseEntity="Aluno" syncable="YES"/>
         <relationship name="possuiAvaliacao" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Avaliacao" inverseName="pertenceMateria" inverseEntity="Avaliacao" syncable="YES"/>
     </entity>
     <elements>
