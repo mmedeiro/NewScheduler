@@ -8,7 +8,7 @@
 
 import UIKit
 
-class testeSalvarMateria: UIViewController {
+class testeSalvarMateria: UITableViewController {
 
     @IBOutlet weak var labelMateria: UILabel!
     

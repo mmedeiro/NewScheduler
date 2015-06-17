@@ -31,6 +31,8 @@
 		4BEC1C7F1B2B5E0200F8C024 /* AdicionarTarefaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEC1C7E1B2B5E0200F8C024 /* AdicionarTarefaTableViewController.swift */; };
 		6EB9CCB41B27669D00D5ED5B /* calendarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9CCB31B27669D00D5ED5B /* calendarioView.swift */; };
 		6EB9CCB61B2766AC00D5ED5B /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9CCB51B2766AC00D5ED5B /* AgendaViewController.swift */; };
+		6EC09A811B30EAD60090F2F0 /* TarefaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC09A801B30EAD60090F2F0 /* TarefaTableViewController.swift */; };
+		6EC09A831B30F1D80090F2F0 /* TarefaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC09A821B30F1D80090F2F0 /* TarefaTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		4BEC1C7E1B2B5E0200F8C024 /* AdicionarTarefaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdicionarTarefaTableViewController.swift; sourceTree = "<group>"; };
 		6EB9CCB31B27669D00D5ED5B /* calendarioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calendarioView.swift; sourceTree = "<group>"; };
 		6EB9CCB51B2766AC00D5ED5B /* AgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
+		6EC09A801B30EAD60090F2F0 /* TarefaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarefaTableViewController.swift; sourceTree = "<group>"; };
+		6EC09A821B30F1D80090F2F0 /* TarefaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarefaTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,8 @@
 			children = (
 				4BD739F91B2D209100509E04 /* DadosUsuárioTableViewController.swift */,
 				4BD739FB1B2D26FB00509E04 /* FirstTableViewController.swift */,
+				6EC09A801B30EAD60090F2F0 /* TarefaTableViewController.swift */,
+				6EC09A821B30F1D80090F2F0 /* TarefaTableViewCell.swift */,
 			);
 			name = "Usuário";
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 				4BD6B3601B26135800451E4C /* EditProfileViewController.swift in Sources */,
 				4BD739FC1B2D26FB00509E04 /* FirstTableViewController.swift in Sources */,
 				4BBCDFFE1B277B0A0072F08B /* AlunoManager.swift in Sources */,
+				6EC09A831B30F1D80090F2F0 /* TarefaTableViewCell.swift in Sources */,
 				4BBCE0001B277E1F0072F08B /* AvaliacaoManager.swift in Sources */,
 				4BD6B3391B25FFC600451E4C /* AppDelegate.swift in Sources */,
 				6EB9CCB41B27669D00D5ED5B /* calendarioView.swift in Sources */,
@@ -315,6 +322,7 @@
 				4BCFC4D91B2B0725007E85F5 /* Aluno.swift in Sources */,
 				4BCFC4DD1B2B09E7007E85F5 /* Materia.swift in Sources */,
 				4BD739FA1B2D209100509E04 /* DadosUsuárioTableViewController.swift in Sources */,
+				6EC09A811B30EAD60090F2F0 /* TarefaTableViewController.swift in Sources */,
 				4BD6B33C1B25FFC600451E4C /* SchedulerApp.xcdatamodeld in Sources */,
 				6EB9CCB61B2766AC00D5ED5B /* AgendaViewController.swift in Sources */,
 				4BD739F81B2D1CD400509E04 /* testeSalvarMateria.swift in Sources */,

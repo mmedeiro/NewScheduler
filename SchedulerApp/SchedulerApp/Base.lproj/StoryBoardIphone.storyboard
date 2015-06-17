@@ -901,7 +901,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IM1-ZY-0ly" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2478" y="375"/>
+            <point key="canvasLocation" x="2478" y="379.5"/>
         </scene>
         <!--Teste Salvar Materia-->
         <scene sceneID="DAG-tM-JGq">
@@ -947,19 +947,68 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="P7V-4h-2AW">
-                        <barButtonItem key="leftBarButtonItem" title="Adicionar" id="TRN-PD-C5M">
-                            <connections>
-                                <segue destination="9PR-HI-1e1" kind="show" id="ej0-bj-Y0C"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Adicionar" id="TRN-PD-C5M"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="labelMateria" destination="FOT-IW-HkY" id="AzH-7d-wa7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFF-Rg-zRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1773" y="-309"/>
+            <point key="canvasLocation" x="2637" y="-1491"/>
+        </scene>
+        <!--Tarefa Table View Controller-->
+        <scene sceneID="zku-Ca-BC6">
+            <objects>
+                <tableViewController id="f67-Br-iBq" customClass="TarefaTableViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hvh-Ki-m0G">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tarefaCell" id="dwV-nO-Ru8" customClass="TarefaTableViewCell" customModule="SchedulerApp" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dwV-nO-Ru8" id="gtE-Do-vOu">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarefa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9v4-IX-Jef">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="24" y="8" width="47" height="21"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="9v4-IX-Jef"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="9v4-IX-Jef"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="tarefa" destination="9v4-IX-Jef" id="t2I-KS-c03"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="f67-Br-iBq" id="RdB-Da-yZx"/>
+                            <outlet property="delegate" destination="f67-Br-iBq" id="6sH-et-5VB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="oTt-qQ-1dd">
+                        <barButtonItem key="leftBarButtonItem" title="Add" id="cyI-1i-WgU">
+                            <connections>
+                                <segue destination="9PR-HI-1e1" kind="show" id="wPx-Cn-0eC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s0Q-VX-mkD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1773" y="-954"/>
         </scene>
         <!--Adicionar Matérias-->
         <scene sceneID="oCG-cx-dEj">
@@ -1035,7 +1084,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9u-6w-RgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2478" y="-309"/>
+            <point key="canvasLocation" x="2478" y="-246"/>
         </scene>
         <!--Item-->
         <scene sceneID="qwq-3H-egk">
@@ -1047,7 +1096,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="FDa-lh-g1b" kind="relationship" relationship="rootViewController" id="sbj-sq-Z13"/>
+                        <segue destination="f67-Br-iBq" kind="relationship" relationship="rootViewController" id="9zf-0x-bWm"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Cj-iO-o68" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1101,7 +1150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5zM-7y-m2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2307" y="-1117"/>
+            <point key="canvasLocation" x="3321" y="-1491"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1ky-KX-s0z">
