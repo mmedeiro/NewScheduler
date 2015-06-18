@@ -24,6 +24,21 @@ class AdicionarMateriaTableViewController: UITableViewController {
         AvaliacaoManager.sharedInstance.salvar()
         self.navigationController?.popViewControllerAnimated(true)
         
+        var app = UILocalNotification()
+        var localNotification: UILocalNotification = UILocalNotification()
+        var newDate = datePicker.date
+        
+        localNotification.fireDate = newDate
+        localNotification.timeZone = NSTimeZone.systemTimeZone()
+        localNotification.soundName = UILocalNotificationDefaultSoundName
+        localNotification.alertBody = "uhuuuuuuuul"
+        localNotification.alertTitle = "Scheduler: "
+        localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber+1
+        
+        localNotification.alertAction = "Testando notificacoes .."
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        
       //  println("esta salvando\(AvaliacaoManager.sharedInstance.salvar())")
         
     }

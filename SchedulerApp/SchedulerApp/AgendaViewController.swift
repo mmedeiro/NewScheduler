@@ -16,6 +16,8 @@ class AgendaViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         calendario.calendarioView()
+        UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert | .Badge, categories: nil))
+        
         
     }
 

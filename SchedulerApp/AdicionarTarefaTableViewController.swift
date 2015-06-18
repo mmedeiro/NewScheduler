@@ -22,6 +22,8 @@ class AdicionarTarefaTableViewController: UITableViewController, UITextFieldDele
         self.navigationController?.popToRootViewControllerAnimated(true)
 
         println("esta salvando\(MateriaManager.sharedInstance.salvar())")
+        
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
