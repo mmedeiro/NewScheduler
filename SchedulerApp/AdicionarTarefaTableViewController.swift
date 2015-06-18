@@ -45,6 +45,11 @@ class AdicionarTarefaTableViewController: UITableViewController, UITextFieldDele
     // MARK: - Table view data source
 
 
+    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let hView = view as! UITableViewHeaderFooterView
+        hView.textLabel.textColor = UIColor.whiteColor()
+    }
+    
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell

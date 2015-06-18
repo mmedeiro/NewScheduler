@@ -46,7 +46,6 @@ class AdicionarMateriaTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,6 +54,11 @@ class AdicionarMateriaTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    
+    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let hView = view as! UITableViewHeaderFooterView
+        hView.textLabel.textColor = UIColor.whiteColor()
+    }
 /*
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
