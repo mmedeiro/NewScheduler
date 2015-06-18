@@ -33,6 +33,7 @@
 		6EB9CCB61B2766AC00D5ED5B /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9CCB51B2766AC00D5ED5B /* AgendaViewController.swift */; };
 		6EC09A811B30EAD60090F2F0 /* TarefaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC09A801B30EAD60090F2F0 /* TarefaTableViewController.swift */; };
 		6EC09A831B30F1D80090F2F0 /* TarefaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC09A821B30F1D80090F2F0 /* TarefaTableViewCell.swift */; };
+		6EC09A851B3245070090F2F0 /* MateriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC09A841B3245070090F2F0 /* MateriaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		6EB9CCB51B2766AC00D5ED5B /* AgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
 		6EC09A801B30EAD60090F2F0 /* TarefaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarefaTableViewController.swift; sourceTree = "<group>"; };
 		6EC09A821B30F1D80090F2F0 /* TarefaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarefaTableViewCell.swift; sourceTree = "<group>"; };
+		6EC09A841B3245070090F2F0 /* MateriaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateriaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				4BD739FB1B2D26FB00509E04 /* FirstTableViewController.swift */,
 				6EC09A801B30EAD60090F2F0 /* TarefaTableViewController.swift */,
 				6EC09A821B30F1D80090F2F0 /* TarefaTableViewCell.swift */,
+				6EC09A841B3245070090F2F0 /* MateriaViewController.swift */,
 			);
 			name = "Usuário";
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC09A851B3245070090F2F0 /* MateriaViewController.swift in Sources */,
 				4BD6B33E1B25FFC600451E4C /* ViewController.swift in Sources */,
 				4BEC1C7F1B2B5E0200F8C024 /* AdicionarTarefaTableViewController.swift in Sources */,
 				4BD6B3601B26135800451E4C /* EditProfileViewController.swift in Sources */,

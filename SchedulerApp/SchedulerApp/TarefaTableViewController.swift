@@ -57,12 +57,10 @@ class TarefaTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("tarefaCell", forIndexPath: indexPath) as! TarefaTableViewCell
 
         let row = indexPath.row as Int
-        var m = materias![row]
+        cell.materia = materias![row]
         
-        cell.tarefa.text = m.nomeMateria
+        cell.tarefa.text = cell.materia!.nomeMateria
         
-        // Configure the cell...
-
         return cell
     }
 
@@ -102,14 +100,17 @@ class TarefaTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // MARK: - Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "materia"{
+            var mView = segue.destinationViewController as! MateriaViewController
+            var cell = sender as! TarefaTableViewCell
+            
+            mView.materia = cell.materia
+            
+        }
     }
-    */
+
 
 }

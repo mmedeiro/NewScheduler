@@ -98,8 +98,8 @@ class FirstTableViewController: UITableViewController, UINavigationBarDelegate {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var dest = segue.destinationViewController as! DadosUsua_rioTableViewController
         
+        var dest = segue.destinationViewController as! DadosUsua_rioTableViewController
         dest.nome = nomeAlunoLabel.text
         dest.curso = cursoAlunoLabel.text
         if semestreAlunoLabel.text != "Semestre"{

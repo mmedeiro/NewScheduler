@@ -952,7 +952,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFF-Rg-zRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2637" y="-1491"/>
+            <point key="canvasLocation" x="2454" y="-1665"/>
         </scene>
         <!--Tarefa Table View Controller-->
         <scene sceneID="zku-Ca-BC6">
@@ -972,24 +972,37 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
-                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="24" y="8" width="47" height="21"/>
-                                            </variation>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="9v4-IX-Jef" firstAttribute="leading" secondItem="gtE-Do-vOu" secondAttribute="leadingMargin" constant="8" id="QEN-QC-7Dp"/>
+                                        <constraint firstAttribute="centerY" secondItem="9v4-IX-Jef" secondAttribute="centerY" id="RZe-nJ-5Dy"/>
+                                        <constraint firstItem="9v4-IX-Jef" firstAttribute="trailing" secondItem="gtE-Do-vOu" secondAttribute="trailingMargin" id="mh1-h7-dIn"/>
+                                    </constraints>
                                     <variation key="default">
                                         <mask key="subviews">
                                             <exclude reference="9v4-IX-Jef"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="QEN-QC-7Dp"/>
+                                            <exclude reference="RZe-nJ-5Dy"/>
+                                            <exclude reference="mh1-h7-dIn"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
                                         <mask key="subviews">
                                             <include reference="9v4-IX-Jef"/>
                                         </mask>
+                                        <mask key="constraints">
+                                            <include reference="QEN-QC-7Dp"/>
+                                            <include reference="RZe-nJ-5Dy"/>
+                                            <include reference="mh1-h7-dIn"/>
+                                        </mask>
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="tarefa" destination="9v4-IX-Jef" id="t2I-KS-c03"/>
+                                    <segue destination="KQb-8W-o8c" kind="show" identifier="materia" id="vKA-o1-VaR"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1001,14 +1014,66 @@
                     <navigationItem key="navigationItem" id="oTt-qQ-1dd">
                         <barButtonItem key="leftBarButtonItem" title="Add" id="cyI-1i-WgU">
                             <connections>
-                                <segue destination="9PR-HI-1e1" kind="show" id="wPx-Cn-0eC"/>
+                                <segue destination="9PR-HI-1e1" kind="show" identifier="add" id="wPx-Cn-0eC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s0Q-VX-mkD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1773" y="-954"/>
+            <point key="canvasLocation" x="1782" y="-952.5"/>
+        </scene>
+        <!--Materia-->
+        <scene sceneID="LY9-nh-cTn">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g6f-EI-DDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="KQb-8W-o8c" customClass="MateriaViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uoW-pT-gK9"/>
+                        <viewControllerLayoutGuide type="bottom" id="z8m-y1-IoN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vJi-eD-jMm">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ZQt-PV-UnF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZQt-PV-UnF" firstAttribute="leading" secondItem="vJi-eD-jMm" secondAttribute="leading" id="6P2-UD-sfK"/>
+                            <constraint firstItem="ZQt-PV-UnF" firstAttribute="top" secondItem="uoW-pT-gK9" secondAttribute="bottom" id="G7V-dR-jkj"/>
+                            <constraint firstItem="z8m-y1-IoN" firstAttribute="top" secondItem="ZQt-PV-UnF" secondAttribute="bottom" id="J3O-Za-jXm"/>
+                            <constraint firstAttribute="trailing" secondItem="ZQt-PV-UnF" secondAttribute="trailing" id="pYc-1C-c22"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ZQt-PV-UnF"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6P2-UD-sfK"/>
+                                <exclude reference="G7V-dR-jkj"/>
+                                <exclude reference="pYc-1C-c22"/>
+                                <exclude reference="J3O-Za-jXm"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ZQt-PV-UnF"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6P2-UD-sfK"/>
+                                <include reference="G7V-dR-jkj"/>
+                                <include reference="pYc-1C-c22"/>
+                                <include reference="J3O-Za-jXm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Materia" id="aTh-kC-XuA"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2710.5" y="-957"/>
         </scene>
         <!--Adicionar Matérias-->
         <scene sceneID="oCG-cx-dEj">
@@ -1150,7 +1215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5zM-7y-m2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3321" y="-1491"/>
+            <point key="canvasLocation" x="3138" y="-1665"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1ky-KX-s0z">
@@ -1812,17 +1877,25 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.30980392159999998" green="0.63529411759999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="XKu-Kn-n7h" secondAttribute="trailing" id="0PJ-Iy-ATN"/>
+                                    <constraint firstAttribute="trailing" secondItem="XKu-Kn-n7h" secondAttribute="trailing" id="0PJ-Iy-ATN">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                                    </constraint>
                                     <constraint firstAttribute="centerX" secondItem="WvU-M2-ZAS" secondAttribute="centerX" id="7yh-JZ-l6J"/>
-                                    <constraint firstAttribute="trailing" secondItem="L68-dC-hc7" secondAttribute="trailing" constant="8" id="9k1-Il-5qF"/>
+                                    <constraint firstAttribute="trailing" secondItem="L68-dC-hc7" secondAttribute="trailing" constant="8" id="9k1-Il-5qF">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="24"/>
+                                    </constraint>
                                     <constraint firstItem="WvU-M2-ZAS" firstAttribute="top" secondItem="Ce9-w5-FUI" secondAttribute="top" constant="60" id="Cqe-mV-ddV"/>
                                     <constraint firstAttribute="bottom" secondItem="L68-dC-hc7" secondAttribute="bottom" constant="29" id="FtT-Op-pMP"/>
-                                    <constraint firstItem="XKu-Kn-n7h" firstAttribute="leading" secondItem="Ce9-w5-FUI" secondAttribute="leading" id="JCj-13-GMe"/>
+                                    <constraint firstItem="XKu-Kn-n7h" firstAttribute="leading" secondItem="Ce9-w5-FUI" secondAttribute="leading" id="JCj-13-GMe">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                                    </constraint>
                                     <constraint firstAttribute="width" secondItem="WvU-M2-ZAS" secondAttribute="width" id="Mp7-Xt-dAc"/>
                                     <constraint firstAttribute="centerX" secondItem="WvU-M2-ZAS" secondAttribute="centerX" id="SLc-ma-Svq"/>
                                     <constraint firstItem="L68-dC-hc7" firstAttribute="top" secondItem="XKu-Kn-n7h" secondAttribute="bottom" constant="0.5" id="gex-8A-mxo"/>
                                     <constraint firstItem="XKu-Kn-n7h" firstAttribute="top" secondItem="Ce9-w5-FUI" secondAttribute="top" constant="8" id="ji2-Jf-JM3"/>
-                                    <constraint firstItem="L68-dC-hc7" firstAttribute="leading" secondItem="Ce9-w5-FUI" secondAttribute="leading" constant="8" id="ljS-ov-caf"/>
+                                    <constraint firstItem="L68-dC-hc7" firstAttribute="leading" secondItem="Ce9-w5-FUI" secondAttribute="leading" constant="8" id="ljS-ov-caf">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="24"/>
+                                    </constraint>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
@@ -1879,8 +1952,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ce9-w5-FUI" firstAttribute="top" secondItem="VhX-WR-Nq3" secondAttribute="bottom" id="0Ji-la-oDQ"/>
-                            <constraint firstItem="Ce9-w5-FUI" firstAttribute="leading" secondItem="ffy-Q1-8IZ" secondAttribute="leading" constant="16" id="AV3-tu-kKt"/>
-                            <constraint firstAttribute="trailing" secondItem="Ce9-w5-FUI" secondAttribute="trailing" constant="16" id="GAh-Na-k7Z"/>
+                            <constraint firstItem="Ce9-w5-FUI" firstAttribute="leading" secondItem="ffy-Q1-8IZ" secondAttribute="leading" constant="16" id="AV3-tu-kKt">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="Ce9-w5-FUI" secondAttribute="trailing" constant="16" id="GAh-Na-k7Z">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">

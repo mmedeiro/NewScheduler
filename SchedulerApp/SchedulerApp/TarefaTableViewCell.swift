@@ -11,6 +11,7 @@ import UIKit
 class TarefaTableViewCell: UITableViewCell {
 
     @IBOutlet weak var tarefa: UILabel!
+    var materia: Materia?
     
     override func awakeFromNib() {
         super.awakeFromNib()
