@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        
         if self.window!.rootViewController as? UITabBarController != nil {
             var tbc = self.window!.rootViewController as! UITabBarController
             tbc.selectedIndex = 1
