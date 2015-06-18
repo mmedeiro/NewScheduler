@@ -48,6 +48,10 @@ class FirstTableViewController: UITableViewController, UINavigationBarDelegate {
 
     // MARK: - Table view data source
 
+    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let hView = view as! UITableViewHeaderFooterView
+        hView.textLabel.textColor = UIColor.whiteColor()
+    }
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
