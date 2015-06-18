@@ -22,7 +22,7 @@ class AdicionarMateriaTableViewController: UITableViewController {
         avaliacao.nomeAvaliacao = textFieldNome.text
         
         AvaliacaoManager.sharedInstance.salvar()
-        self.navigationController?.popToRootViewControllerAnimated(true)
+        self.navigationController?.popViewControllerAnimated(true)
         
       //  println("esta salvando\(AvaliacaoManager.sharedInstance.salvar())")
         
