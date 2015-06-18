@@ -96,7 +96,7 @@ class calendarioView: UIView, UIGestureRecognizerDelegate{
             
             var diaTest = calendar.dateFromComponents(newComp)
             if diaInt.stringFromDate(diaTest!) == diaInt.stringFromDate(today){
-                botao.backgroundColor = UIColor(red: 0.15, green: 0.48, blue: 0.8, alpha: 1)
+                botao.backgroundColor = UIColor(red: 0.7, green: 0.3, blue: 0.4, alpha: 1)
             }
             else{
                 botao.backgroundColor = nil
@@ -120,8 +120,8 @@ class calendarioView: UIView, UIGestureRecognizerDelegate{
         self.updateDay(0)
         
         //muda cor do botao
-        sender.setTitleColor(UIColor(red: 0.3, green: 0.63, blue: 0.98, alpha: 1), forState: UIControlState.Normal)
-        sender.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+        sender.setTitleColor(UIColor(red: 1, green: 1, blue: 1, alpha: 1), forState: UIControlState.Normal)
+        sender.backgroundColor = UIColor(red: 0 , green: 0, blue: 0, alpha: 1)
         
         var format = NSDateFormatter()
         format.dateStyle = NSDateFormatterStyle.LongStyle
