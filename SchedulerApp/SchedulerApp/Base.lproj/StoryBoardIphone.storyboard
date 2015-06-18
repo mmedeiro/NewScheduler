@@ -395,7 +395,7 @@
             <objects>
                 <tableViewController id="uhd-vJ-sJ9" customClass="FirstTableViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="pmd-o2-Z1f">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.75032111644584443" green="0.012807277491713766" blue="0.029375369533325573" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -759,7 +759,7 @@
             <objects>
                 <tableViewController id="zYo-dt-0t0" customClass="DadosUsua_rioTableViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EE7-5h-cEP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.64647006250000005" green="0.0" blue="0.024965191090000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="0.75032111639999999" green="0.01280727749" blue="0.029375369530000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -984,6 +984,7 @@
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="f67-Br-iBq" customClass="TarefaTableViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hvh-Ki-m0G">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.74509803919999995" green="0.0" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1058,13 +1059,13 @@
         <!--Materia-->
         <scene sceneID="LY9-nh-cTn">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g6f-EI-DDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="KQb-8W-o8c" customClass="MateriaViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uoW-pT-gK9"/>
                         <viewControllerLayoutGuide type="bottom" id="z8m-y1-IoN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vJi-eD-jMm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ZQt-PV-UnF">
@@ -1084,10 +1085,10 @@
                                 <exclude reference="ZQt-PV-UnF"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="J3O-Za-jXm"/>
                                 <exclude reference="6P2-UD-sfK"/>
                                 <exclude reference="G7V-dR-jkj"/>
                                 <exclude reference="pYc-1C-c22"/>
-                                <exclude reference="J3O-Za-jXm"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1095,15 +1096,16 @@
                                 <include reference="ZQt-PV-UnF"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="J3O-Za-jXm"/>
                                 <include reference="6P2-UD-sfK"/>
                                 <include reference="G7V-dR-jkj"/>
                                 <include reference="pYc-1C-c22"/>
-                                <include reference="J3O-Za-jXm"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Materia" id="aTh-kC-XuA"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g6f-EI-DDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2710.5" y="-957"/>
         </scene>
@@ -1112,7 +1114,7 @@
             <objects>
                 <tableViewController id="9PR-HI-1e1" customClass="AdicionarTarefaTableViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="luW-OS-cNu">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hgZ-5a-3NK">
@@ -1329,7 +1331,7 @@
                         <viewControllerLayoutGuide type="bottom" id="leJ-WL-Bev"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ffy-Q1-8IZ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ce9-w5-FUI" customClass="calendarioView" customModule="SchedulerApp" customModuleProvider="target">
