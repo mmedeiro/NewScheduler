@@ -8,9 +8,8 @@
     </entity>
     <entity name="Avaliacao" representedClassName="Avaliacao" syncable="YES">
         <attribute name="dataAvaliacao" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="notaAvaliacao" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="pesoAvaliacao" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="tipoAvaliacao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nomeAvaliacao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notaAvaliacao" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="pertenceMateria" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Materia" inverseName="possuiAvaliacao" inverseEntity="Materia" syncable="YES"/>
     </entity>
     <entity name="Materia" representedClassName="Materia" syncable="YES">
@@ -20,7 +19,7 @@
     </entity>
     <elements>
         <element name="Aluno" positionX="-198" positionY="-13" width="128" height="103"/>
-        <element name="Avaliacao" positionX="340" positionY="-64" width="128" height="118"/>
+        <element name="Avaliacao" positionX="340" positionY="-64" width="128" height="105"/>
         <element name="Materia" positionX="45" positionY="-139" width="128" height="88"/>
     </elements>
 </model>

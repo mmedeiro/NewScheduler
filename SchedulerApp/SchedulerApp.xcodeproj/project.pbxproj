@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		218097211B32897900AA7AFF /* AdicionarMateriaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218097201B32897900AA7AFF /* AdicionarMateriaTableViewController.swift */; };
+		218097231B33126A00AA7AFF /* MateriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218097221B33126A00AA7AFF /* MateriaTableViewCell.swift */; };
 		4BBCDFFA1B27570E0072F08B /* StoryboardIpad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCDFF91B27570E0072F08B /* StoryboardIpad.storyboard */; };
 		4BBCDFFC1B2762770072F08B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCDFFB1B2762770072F08B /* ProfileViewController.swift */; };
 		4BBCDFFE1B277B0A0072F08B /* AlunoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCDFFD1B277B0A0072F08B /* AlunoManager.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		218097201B32897900AA7AFF /* AdicionarMateriaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdicionarMateriaTableViewController.swift; sourceTree = "<group>"; };
+		218097221B33126A00AA7AFF /* MateriaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateriaTableViewCell.swift; sourceTree = "<group>"; };
 		4BBCDFF91B27570E0072F08B /* StoryboardIpad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardIpad.storyboard; sourceTree = "<group>"; };
 		4BBCDFFB1B2762770072F08B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4BBCDFFD1B277B0A0072F08B /* AlunoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoManager.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 		4BD6B32A1B25FFC600451E4C = {
 			isa = PBXGroup;
 			children = (
+				218097201B32897900AA7AFF /* AdicionarMateriaTableViewController.swift */,
 				4BEC1C7E1B2B5E0200F8C024 /* AdicionarTarefaTableViewController.swift */,
 				4BD6B3351B25FFC600451E4C /* SchedulerApp */,
 				4BD6B34E1B25FFC600451E4C /* SchedulerAppTests */,
@@ -191,6 +196,7 @@
 				6EC09A801B30EAD60090F2F0 /* TarefaTableViewController.swift */,
 				6EC09A821B30F1D80090F2F0 /* TarefaTableViewCell.swift */,
 				6EC09A841B3245070090F2F0 /* MateriaViewController.swift */,
+				218097221B33126A00AA7AFF /* MateriaTableViewCell.swift */,
 			);
 			name = "Usuário";
 			sourceTree = "<group>";
@@ -319,9 +325,11 @@
 				4BD6B3391B25FFC600451E4C /* AppDelegate.swift in Sources */,
 				6EB9CCB41B27669D00D5ED5B /* calendarioView.swift in Sources */,
 				4BBCDFFC1B2762770072F08B /* ProfileViewController.swift in Sources */,
+				218097231B33126A00AA7AFF /* MateriaTableViewCell.swift in Sources */,
 				4BCFC4E21B2B0AC2007E85F5 /* CoreDataManager.swift in Sources */,
 				4BCFC4DF1B2B09E8007E85F5 /* Avaliacao.swift in Sources */,
 				4BCFC4E41B2B10DF007E85F5 /* MateriaManager.swift in Sources */,
+				218097211B32897900AA7AFF /* AdicionarMateriaTableViewController.swift in Sources */,
 				4BCDA6BD1B2BC4C5003D8B01 /* MateriasTableViewController.swift in Sources */,
 				4BCFC4D91B2B0725007E85F5 /* Aluno.swift in Sources */,
 				4BCFC4DD1B2B09E7007E85F5 /* Materia.swift in Sources */,

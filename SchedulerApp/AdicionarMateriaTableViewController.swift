@@ -1,38 +1,37 @@
 //
-//  AdicionarTarefaTableViewController.swift
+//  AdicionarMateriaTableViewController.swift
 //  SchedulerApp
 //
-//  Created by Mariana Medeiro on 12/06/15.
+//  Created by Guilherme on 18/06/15.
 //  Copyright (c) 2015 Mariana Medeiro. All rights reserved.
 //
 
 import UIKit
 
-class AdicionarTarefaTableViewController: UITableViewController, UITextFieldDelegate {
+class AdicionarMateriaTableViewController: UITableViewController {
 
-    @IBOutlet weak var materiaTextField: UITextField!
+    @IBOutlet weak var textFieldNota: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var textFieldNome: UITextField!
     
-    @IBAction func salvarMateria(sender: AnyObject) {
+    @IBAction func salvarAvaliacao(sender:AnyObject){
         
-        var materia = MateriaManager.sharedInstance.novaMateria()
-        materia.nomeMateria = materiaTextField.text
+        var avaliacao = AvaliacaoManager.sharedInstance.novaAvaliacao()
+        avaliacao.notaAvaliacao = textFieldNota.text
+       avaliacao.dataAvaliacao = datePicker.date
+        avaliacao.nomeAvaliacao = textFieldNome.text
         
-        MateriaManager.sharedInstance.salvar()
-        
+        AvaliacaoManager.sharedInstance.salvar()
         self.navigationController?.popToRootViewControllerAnimated(true)
-
-        println("esta salvando\(MateriaManager.sharedInstance.salvar())")
+        
+      //  println("esta salvando\(AvaliacaoManager.sharedInstance.salvar())")
+        
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        materiaTextField.placeholder = "Insira o nome da disciplina ..."
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,7 +40,18 @@ class AdicionarTarefaTableViewController: UITableViewController, UITextFieldDele
     }
 
     // MARK: - Table view data source
+/*
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Potentially incomplete method implementation.
+        // Return the number of sections.
+        return 0
+    }
 
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete method implementation.
+        // Return the number of rows in the section.
+        return 0
+    }
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -72,7 +82,7 @@ class AdicionarTarefaTableViewController: UITableViewController, UITextFieldDele
         }    
     }
     */
-
+*/
     /*
     // Override to support rearranging the table view.
     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {

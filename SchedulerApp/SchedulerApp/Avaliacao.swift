@@ -13,9 +13,9 @@ import CoreData
 class Avaliacao: NSManagedObject {
 
     @NSManaged var dataAvaliacao: NSDate
-    @NSManaged var notaAvaliacao: NSNumber
-    @NSManaged var pesoAvaliacao: NSNumber
-    @NSManaged var tipoAvaliacao: String
+    @NSManaged var notaAvaliacao: NSString
+    @NSManaged var nomeAvaliacao: String
     @NSManaged var pertenceMateria: Materia
+    
 
 }
