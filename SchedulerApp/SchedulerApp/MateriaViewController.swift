@@ -65,7 +65,7 @@ class MateriaViewController: UIViewController, UITableViewDelegate,UITableViewDa
         
         var dateFormatter = NSDateFormatter()
         
-        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+        dateFormatter.dateFormat = "dd/MM/yyyy  hh:mm"
         
         var strDate = dateFormatter.stringFromDate(cell.avaliacao!.dataAvaliacao)
         
