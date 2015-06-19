@@ -67,7 +67,7 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        self.view .endEditing(true)
+        self.view.endEditing(true)
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {

@@ -44,7 +44,7 @@ class DadosUsua_rioTableViewController: UITableViewController, UITextFieldDelega
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-         self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         nomeUsuarioTextField.placeholder = "Nome do aluno"
         cursoUsuarioTextField.placeholder = "Curso"
         semestreUsuarioTextField.placeholder = "Semestre Atual"
@@ -88,10 +88,10 @@ class DadosUsua_rioTableViewController: UITableViewController, UITextFieldDelega
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return NO if you do not want the specified item to be editable.
-        return true
+        return false
     }
-    */
 
+*/
     /*
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {

@@ -875,7 +875,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOT-IW-HkY">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -1015,19 +1015,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nomeAvaliacao" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hx4-az-bq7">
-                                                    <rect key="frame" x="8" y="8" width="117" height="21"/>
+                                                    <rect key="frame" x="8" y="8" width="342" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="notaAvaliacao" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZq-CK-BiY">
-                                                    <rect key="frame" x="8" y="37" width="108" height="21"/>
+                                                    <rect key="frame" x="8" y="37" width="342" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dataAvaliacao" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hT1-VJ-Pje">
-                                                    <rect key="frame" x="8" y="66" width="108" height="21"/>
+                                                    <rect key="frame" x="8" y="66" width="337" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -1099,7 +1099,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6f-EI-DDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2710.5" y="-957"/>
+            <point key="canvasLocation" x="2710" y="-957"/>
         </scene>
         <!--Adicionar Matérias-->
         <scene sceneID="oCG-cx-dEj">
@@ -1368,7 +1368,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="HhU-dr-ZOP">
-                                                    <rect key="frame" x="15" y="8" width="315" height="98.5"/>
+                                                    <rect key="frame" x="15" y="8" width="315" height="99"/>
                                                     <color key="backgroundColor" red="0.75032111639999999" green="0.01280727749" blue="0.029375369530000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="456298068.51629502">
@@ -2171,7 +2171,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.64647006250000005" green="0.0" blue="0.024965191090000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Ce9-w5-FUI" firstAttribute="top" secondItem="VhX-WR-Nq3" secondAttribute="bottom" id="0Ji-la-oDQ"/>
                             <constraint firstItem="Ce9-w5-FUI" firstAttribute="leading" secondItem="ffy-Q1-8IZ" secondAttribute="leading" constant="16" id="AV3-tu-kKt">
@@ -2193,10 +2193,10 @@
                                 <exclude reference="0Ji-la-oDQ"/>
                                 <exclude reference="AV3-tu-kKt"/>
                                 <exclude reference="GAh-Na-k7Z"/>
+                                <exclude reference="cdM-PQ-Tdu"/>
                                 <exclude reference="BR6-Qq-8g8"/>
                                 <exclude reference="LrQ-AM-HVF"/>
                                 <exclude reference="hH7-IT-M2k"/>
-                                <exclude reference="cdM-PQ-Tdu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -2207,10 +2207,10 @@
                                 <include reference="0Ji-la-oDQ"/>
                                 <include reference="AV3-tu-kKt"/>
                                 <include reference="GAh-Na-k7Z"/>
+                                <include reference="cdM-PQ-Tdu"/>
                                 <include reference="BR6-Qq-8g8"/>
                                 <include reference="LrQ-AM-HVF"/>
                                 <include reference="hH7-IT-M2k"/>
-                                <include reference="cdM-PQ-Tdu"/>
                             </mask>
                         </variation>
                     </view>
