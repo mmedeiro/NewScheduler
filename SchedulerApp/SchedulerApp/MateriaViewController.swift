@@ -16,6 +16,7 @@ class MateriaViewController: UIViewController, UITableViewDelegate,UITableViewDa
     var tdsAvaliacoes: Array<Avaliacao>?
     var avaliacao: Avaliacao?
 
+    
     @IBOutlet weak var tarefaTableView: UITableView!
     
     
@@ -72,6 +73,8 @@ class MateriaViewController: UIViewController, UITableViewDelegate,UITableViewDa
         cell.nomeAvaliacao.text = cell.avaliacao!.nomeAvaliacao
         cell.notaAvaliacao.text = cell.avaliacao!.notaAvaliacao as String
         cell.dataAvaliacao.text = strDate
+        cell.statusAvaliacao.text = "\(cell.avaliacao!.statusAvaliacao)"
+        
         
         return cell
     }
@@ -84,7 +87,12 @@ class MateriaViewController: UIViewController, UITableViewDelegate,UITableViewDa
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
         var mView = segue.destinationViewController as! AdicionarMateriaTableViewController
+        
+        if segue.identifier == ""{
+            mView.edit = false
+        }
         
         mView.materia = materia
     }

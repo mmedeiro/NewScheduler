@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		218097211B32897900AA7AFF /* AdicionarMateriaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218097201B32897900AA7AFF /* AdicionarMateriaTableViewController.swift */; };
 		218097231B33126A00AA7AFF /* MateriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218097221B33126A00AA7AFF /* MateriaTableViewCell.swift */; };
+		21ADD80B1B34953D00AD9678 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21ADD80A1B34953D00AD9678 /* CloudKit.framework */; };
 		4BBCDFFA1B27570E0072F08B /* StoryboardIpad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCDFF91B27570E0072F08B /* StoryboardIpad.storyboard */; };
 		4BBCDFFC1B2762770072F08B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCDFFB1B2762770072F08B /* ProfileViewController.swift */; };
 		4BBCDFFE1B277B0A0072F08B /* AlunoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCDFFD1B277B0A0072F08B /* AlunoManager.swift */; };
@@ -51,6 +52,8 @@
 /* Begin PBXFileReference section */
 		218097201B32897900AA7AFF /* AdicionarMateriaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdicionarMateriaTableViewController.swift; sourceTree = "<group>"; };
 		218097221B33126A00AA7AFF /* MateriaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateriaTableViewCell.swift; sourceTree = "<group>"; };
+		21ADD8091B34952800AD9678 /* SchedulerApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SchedulerApp.entitlements; sourceTree = "<group>"; };
+		21ADD80A1B34953D00AD9678 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		4BBCDFF91B27570E0072F08B /* StoryboardIpad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardIpad.storyboard; sourceTree = "<group>"; };
 		4BBCDFFB1B2762770072F08B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4BBCDFFD1B277B0A0072F08B /* AlunoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoManager.swift; sourceTree = "<group>"; };
@@ -89,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21ADD80B1B34953D00AD9678 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +130,7 @@
 		4BD6B32A1B25FFC600451E4C = {
 			isa = PBXGroup;
 			children = (
+				21ADD80A1B34953D00AD9678 /* CloudKit.framework */,
 				218097201B32897900AA7AFF /* AdicionarMateriaTableViewController.swift */,
 				4BEC1C7E1B2B5E0200F8C024 /* AdicionarTarefaTableViewController.swift */,
 				4BD6B3351B25FFC600451E4C /* SchedulerApp */,
@@ -146,6 +151,7 @@
 		4BD6B3351B25FFC600451E4C /* SchedulerApp */ = {
 			isa = PBXGroup;
 			children = (
+				21ADD8091B34952800AD9678 /* SchedulerApp.entitlements */,
 				4BD6B3381B25FFC600451E4C /* AppDelegate.swift */,
 				4BCFC4E51B2B12A8007E85F5 /* Persistence */,
 				6EB9CCB31B27669D00D5ED5B /* calendarioView.swift */,
@@ -262,6 +268,12 @@
 				TargetAttributes = {
 					4BD6B3321B25FFC600451E4C = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 7Q38B56865;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					4BD6B34A1B25FFC600451E4C = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -464,11 +476,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SchedulerApp/SchedulerApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SchedulerApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -477,11 +492,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SchedulerApp/SchedulerApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SchedulerApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

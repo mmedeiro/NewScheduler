@@ -14,6 +14,7 @@ class Avaliacao: NSManagedObject {
 
     @NSManaged var dataAvaliacao: NSDate
     @NSManaged var notaAvaliacao: NSString
+    @NSManaged var statusAvaliacao: Bool
     @NSManaged var nomeAvaliacao: String
     @NSManaged var pertenceMateria: Materia
     

@@ -16,6 +16,8 @@ class MateriaTableViewCell: UITableViewCell {
     
     @IBOutlet weak var dataAvaliacao: UILabel!
     
+    @IBOutlet weak var statusAvaliacao: UILabel!
+    
     var avaliacao: Avaliacao?
     
     

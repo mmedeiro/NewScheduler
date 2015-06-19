@@ -21,21 +21,22 @@ class AdicionarMateriaTableViewController: UITableViewController {
     var data = NSDate()
     var edit = false
     
+    @IBOutlet weak var statusAvaliacao: UISwitch!
+    
+    
     @IBAction func salvarAvaliacao(sender:AnyObject){
         
         var avaliacao: Avaliacao?
         
-        if edit {
+        if !edit {
             avaliacao = AvaliacaoManager.sharedInstance.novaAvaliacao()
             avaliacao?.notaAvaliacao = textFieldNota.text
             avaliacao?.dataAvaliacao = datePicker.date
             avaliacao?.nomeAvaliacao = textFieldNome.text
+            avaliacao?.statusAvaliacao = statusAvaliacao.enabled
             avaliacao?.pertenceMateria = materia!
             AvaliacaoManager.sharedInstance.salvar()
         }
-        
-        
-        
         
         
         var app = UILocalNotification()
