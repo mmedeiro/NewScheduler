@@ -12,14 +12,20 @@ class MateriaViewController: UIViewController, UITableViewDelegate,UITableViewDa
     
     var materia: Materia?
     
-    var avaliacoes: Array<Avaliacao>?
+    var avaliacoes =  Array<Avaliacao>()
+    var tdsAvaliacoes: Array<Avaliacao>?
     var avaliacao: Avaliacao?
 
     @IBOutlet weak var tarefaTableView: UITableView!
     
     
     override func viewWillAppear(animated: Bool) {
-        avaliacoes = AvaliacaoManager.sharedInstance.Avaliacao()!
+        tdsAvaliacoes = AvaliacaoManager.sharedInstance.Avaliacao()!
+        for avalacao in tdsAvaliacoes!{
+            if avalacao.pertenceMateria == materia!{
+                avaliacoes.append(avalacao)
+            }
+        }
         self.tarefaTableView.reloadData()
     }
     
@@ -46,14 +52,14 @@ class MateriaViewController: UIViewController, UITableViewDelegate,UITableViewDa
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return avaliacoes!.count
+        return avaliacoes.count
     }
     
     func tableView(tarefaTableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tarefaTableView.dequeueReusableCellWithIdentifier("materiaCell", forIndexPath: indexPath) as! MateriaTableViewCell
         
         let row = indexPath.row as Int
-        cell.avaliacao = avaliacoes![row]
+        cell.avaliacao = avaliacoes[row]
         
         
         var dateFormatter = NSDateFormatter()
@@ -71,14 +77,17 @@ class MateriaViewController: UIViewController, UITableViewDelegate,UITableViewDa
     }
     
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        var mView = segue.destinationViewController as! AdicionarMateriaTableViewController
+        
+        mView.materia = materia
     }
-    */
+
 
 }

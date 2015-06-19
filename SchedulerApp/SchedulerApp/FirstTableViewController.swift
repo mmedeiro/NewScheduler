@@ -17,6 +17,8 @@ class FirstTableViewController: UITableViewController, UINavigationBarDelegate {
     var students: Array<Aluno>?
     var student: Aluno?
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,15 +55,17 @@ class FirstTableViewController: UITableViewController, UINavigationBarDelegate {
         hView.textLabel.textColor = UIColor.whiteColor()
     }
 
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
 
-        // Configure the cell...
+//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCellWithIdentifier("Prox", forIndexPath: indexPath) as! UITableViewCell
+//
+//        if indexPath.section == 2 {
+//            cell.textLabel?.text = "COisa"
+//        }
+//
+//        return cell
+//    }
 
-        return cell
-    }
-    */
 
     /*
     // Override to support conditional editing of the table view.

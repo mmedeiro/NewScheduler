@@ -9,6 +9,8 @@
 import UIKit
 
 class AdicionarMateriaTableViewController: UITableViewController {
+    
+    var materia: Materia?
 
     @IBOutlet weak var textFieldNota: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -20,6 +22,7 @@ class AdicionarMateriaTableViewController: UITableViewController {
         avaliacao.notaAvaliacao = textFieldNota.text
        avaliacao.dataAvaliacao = datePicker.date
         avaliacao.nomeAvaliacao = textFieldNome.text
+        avaliacao.pertenceMateria = materia!
         
         AvaliacaoManager.sharedInstance.salvar()
         self.navigationController?.popViewControllerAnimated(true)
@@ -27,17 +30,25 @@ class AdicionarMateriaTableViewController: UITableViewController {
         var app = UILocalNotification()
         var localNotification: UILocalNotification = UILocalNotification()
         var newDate = datePicker.date
+        var calendar = NSCalendar.currentCalendar()
+        calendar.timeZone = NSTimeZone.defaultTimeZone()
         
-        localNotification.fireDate = newDate
-        localNotification.timeZone = NSTimeZone.systemTimeZone()
-        localNotification.soundName = UILocalNotificationDefaultSoundName
-        localNotification.alertBody = "uhuuuuuuuul"
-        localNotification.alertTitle = "Scheduler: "
-        localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber+1
-        
-        localNotification.alertAction = "Testando notificacoes .."
-        
-        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        for i in 1...7 {
+            var daysToSbustract = NSDateComponents()
+            daysToSbustract.day = 0 - i
+            var aux = calendar.dateByAddingComponents(daysToSbustract, toDate: newDate, options: NSCalendarOptions(0))
+            
+            localNotification.fireDate = aux
+            localNotification.timeZone = NSTimeZone.systemTimeZone()
+            localNotification.soundName = UILocalNotificationDefaultSoundName
+            localNotification.alertBody = "\(avaliacao.nomeAvaliacao) será em \(i) dias, CUIDADO!"
+            localNotification.alertTitle = "Scheduler: "
+            localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber+1
+            
+            localNotification.alertAction = "ver"
+            
+            UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        }
         
       //  println("esta salvando\(AvaliacaoManager.sharedInstance.salvar())")
         

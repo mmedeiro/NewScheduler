@@ -18,6 +18,7 @@ class MateriaTableViewCell: UITableViewCell {
     
     var avaliacao: Avaliacao?
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
