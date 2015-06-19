@@ -20,7 +20,20 @@ class AgendaViewController: UIViewController,UITableViewDataSource,UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var soDiahj = NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitDay, fromDate: NSDate())
+        atualizaTarefas()
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        // Do any additional setup after loading the view.
+        calendario.calendarioView()
+        UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: nil))
+        
+        
+    }
+    
+    func atualizaTarefas(){
+        var soDiahj = NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitDay, fromDate: calendario.selectedDay)
         
         tdsAvaliacoes = AvaliacaoManager.sharedInstance.Avaliacao()!
         for avalacao in tdsAvaliacoes!{
@@ -32,15 +45,6 @@ class AgendaViewController: UIViewController,UITableViewDataSource,UITableViewDe
                 avaliacoes.append(avalacao)
             }
         }
-        
-        tableView.dataSource = self
-        tableView.delegate = self
-        
-        // Do any additional setup after loading the view.
-        calendario.calendarioView()
-        UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: nil))
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,6 +71,11 @@ class AgendaViewController: UIViewController,UITableViewDataSource,UITableViewDe
         return cell
     }
 
+    //gabiarra para teste FAZER UM NOTIFICATION PARA PEGAR O DIA SELECIONADO TODA VEZ QUE MUDAMOS O DIA
+    override func  touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        atualizaTarefas()
+        tableView.reloadData()
+    }
     /*
     // MARK: - Navigation
 
