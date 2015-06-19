@@ -16,16 +16,27 @@ class AdicionarMateriaTableViewController: UITableViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var textFieldNome: UITextField!
     
+    var nome = String()
+    var nota = String()
+    var data = NSDate()
+    var edit = false
+    
     @IBAction func salvarAvaliacao(sender:AnyObject){
         
-        var avaliacao = AvaliacaoManager.sharedInstance.novaAvaliacao()
-        avaliacao.notaAvaliacao = textFieldNota.text
-       avaliacao.dataAvaliacao = datePicker.date
-        avaliacao.nomeAvaliacao = textFieldNome.text
-        avaliacao.pertenceMateria = materia!
+        var avaliacao: Avaliacao?
         
-        AvaliacaoManager.sharedInstance.salvar()
-        self.navigationController?.popViewControllerAnimated(true)
+        if edit {
+            avaliacao = AvaliacaoManager.sharedInstance.novaAvaliacao()
+            avaliacao?.notaAvaliacao = textFieldNota.text
+            avaliacao?.dataAvaliacao = datePicker.date
+            avaliacao?.nomeAvaliacao = textFieldNome.text
+            avaliacao?.pertenceMateria = materia!
+            AvaliacaoManager.sharedInstance.salvar()
+        }
+        
+        
+        
+        
         
         var app = UILocalNotification()
         var localNotification: UILocalNotification = UILocalNotification()
@@ -41,7 +52,7 @@ class AdicionarMateriaTableViewController: UITableViewController {
             localNotification.fireDate = aux
             localNotification.timeZone = NSTimeZone.systemTimeZone()
             localNotification.soundName = UILocalNotificationDefaultSoundName
-            localNotification.alertBody = "\(avaliacao.nomeAvaliacao) será em \(i) dias, CUIDADO!"
+            localNotification.alertBody = "\(avaliacao?.nomeAvaliacao) será em \(i) dias, CUIDADO!"
             localNotification.alertTitle = "Scheduler: "
             localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber+1
             
@@ -50,12 +61,16 @@ class AdicionarMateriaTableViewController: UITableViewController {
             UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
         }
         
+        self.navigationController?.popViewControllerAnimated(true)
       //  println("esta salvando\(AvaliacaoManager.sharedInstance.salvar())")
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        textFieldNome.text = nome
+        textFieldNota.text = nota
+        datePicker.date = data
     }
 
     override func didReceiveMemoryWarning() {

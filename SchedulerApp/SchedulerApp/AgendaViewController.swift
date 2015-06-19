@@ -19,6 +19,7 @@ class AgendaViewController: UIViewController,UITableViewDataSource,UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tdsAvaliacoes = AvaliacaoManager.sharedInstance.Avaliacao()!
         
         atualizaTarefas()
         
@@ -33,9 +34,12 @@ class AgendaViewController: UIViewController,UITableViewDataSource,UITableViewDe
     }
     
     func atualizaTarefas(){
+        
+        avaliacoes = Array<Avaliacao>()
+        
         var soDiahj = NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitDay, fromDate: calendario.selectedDay)
         
-        tdsAvaliacoes = AvaliacaoManager.sharedInstance.Avaliacao()!
+        
         for avalacao in tdsAvaliacoes!{
             
             var soDia = NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitDay, fromDate: avalacao.dataAvaliacao)
