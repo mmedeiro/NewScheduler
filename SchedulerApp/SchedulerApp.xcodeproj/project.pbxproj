@@ -10,7 +10,7 @@
 		218097211B32897900AA7AFF /* AdicionarMateriaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218097201B32897900AA7AFF /* AdicionarMateriaTableViewController.swift */; };
 		218097231B33126A00AA7AFF /* MateriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218097221B33126A00AA7AFF /* MateriaTableViewCell.swift */; };
 		21ADD80B1B34953D00AD9678 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21ADD80A1B34953D00AD9678 /* CloudKit.framework */; };
-		4BBCDFFA1B27570E0072F08B /* StoryboardIpad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCDFF91B27570E0072F08B /* StoryboardIpad.storyboard */; };
+		4BBCDFFA1B27570E0072F08B /* MainIpad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCDFF91B27570E0072F08B /* MainIpad.storyboard */; };
 		4BBCDFFC1B2762770072F08B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCDFFB1B2762770072F08B /* ProfileViewController.swift */; };
 		4BBCDFFE1B277B0A0072F08B /* AlunoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCDFFD1B277B0A0072F08B /* AlunoManager.swift */; };
 		4BBCE0001B277E1F0072F08B /* AvaliacaoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCDFFF1B277E1F0072F08B /* AvaliacaoManager.swift */; };
@@ -54,7 +54,7 @@
 		218097221B33126A00AA7AFF /* MateriaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateriaTableViewCell.swift; sourceTree = "<group>"; };
 		21ADD8091B34952800AD9678 /* SchedulerApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SchedulerApp.entitlements; sourceTree = "<group>"; };
 		21ADD80A1B34953D00AD9678 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		4BBCDFF91B27570E0072F08B /* StoryboardIpad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardIpad.storyboard; sourceTree = "<group>"; };
+		4BBCDFF91B27570E0072F08B /* MainIpad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainIpad.storyboard; sourceTree = "<group>"; };
 		4BBCDFFB1B2762770072F08B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4BBCDFFD1B277B0A0072F08B /* AlunoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoManager.swift; sourceTree = "<group>"; };
 		4BBCDFFF1B277E1F0072F08B /* AvaliacaoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvaliacaoManager.swift; sourceTree = "<group>"; };
@@ -214,7 +214,7 @@
 				4BD739FD1B2D2AEE00509E04 /* Usuário */,
 				4BD739F71B2D1CD400509E04 /* testeSalvarMateria.swift */,
 				4BCDA6BC1B2BC4C5003D8B01 /* MateriasTableViewController.swift */,
-				4BBCDFF91B27570E0072F08B /* StoryboardIpad.storyboard */,
+				4BBCDFF91B27570E0072F08B /* MainIpad.storyboard */,
 			);
 			name = StoryBoards;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 				4BD6B3411B25FFC600451E4C /* StoryBoardIphone.storyboard in Resources */,
 				4BD6B3461B25FFC600451E4C /* LaunchScreen.xib in Resources */,
 				4BD6B3431B25FFC600451E4C /* Images.xcassets in Resources */,
-				4BBCDFFA1B27570E0072F08B /* StoryboardIpad.storyboard in Resources */,
+				4BBCDFFA1B27570E0072F08B /* MainIpad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

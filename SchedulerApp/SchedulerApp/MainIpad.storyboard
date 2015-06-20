@@ -11,12 +11,13 @@
             <objects>
                 <tableViewController id="L9S-8h-ho6" customClass="AdicionarMateriaTableViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="6U5-H4-ay7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.59999999999999998" green="0.0" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="0.68235294120000001" green="0.0" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oxQ-is-jeH">
-                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <rect key="frame" x="0.0" y="167.5" width="600" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Salvar">
                                 <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
@@ -217,7 +218,7 @@
                                 </state>
                             </button>
                             <connections>
-                                <segue destination="m1b-7B-WAu" kind="push" id="6i4-3f-H52"/>
+                                <segue destination="m1b-7B-WAu" kind="push" id="0Uz-vf-uab"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -480,18 +481,18 @@
                                                     <exclude reference="p1M-Is-p6K"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="4Om-Id-bD5"/>
-                                                    <exclude reference="Bt9-7x-NRx"/>
-                                                    <exclude reference="Sb6-YC-2HO"/>
+                                                    <exclude reference="15q-jL-1QI"/>
+                                                    <exclude reference="CYz-Me-Q3Q"/>
                                                     <exclude reference="2A5-cn-2NW"/>
                                                     <exclude reference="Bub-Zx-Vjj"/>
                                                     <exclude reference="KAY-UV-Zrj"/>
-                                                    <exclude reference="15q-jL-1QI"/>
-                                                    <exclude reference="CYz-Me-Q3Q"/>
                                                     <exclude reference="36t-ts-x6g"/>
                                                     <exclude reference="TNN-jA-Z7l"/>
                                                     <exclude reference="bVd-HE-5Oh"/>
                                                     <exclude reference="jr4-ZF-CHq"/>
+                                                    <exclude reference="4Om-Id-bD5"/>
+                                                    <exclude reference="Bt9-7x-NRx"/>
+                                                    <exclude reference="Sb6-YC-2HO"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=regular">
@@ -502,18 +503,18 @@
                                                     <include reference="p1M-Is-p6K"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="4Om-Id-bD5"/>
-                                                    <include reference="Bt9-7x-NRx"/>
-                                                    <include reference="Sb6-YC-2HO"/>
+                                                    <include reference="15q-jL-1QI"/>
+                                                    <include reference="CYz-Me-Q3Q"/>
                                                     <include reference="2A5-cn-2NW"/>
                                                     <include reference="Bub-Zx-Vjj"/>
                                                     <include reference="KAY-UV-Zrj"/>
-                                                    <include reference="15q-jL-1QI"/>
-                                                    <include reference="CYz-Me-Q3Q"/>
                                                     <include reference="36t-ts-x6g"/>
                                                     <include reference="TNN-jA-Z7l"/>
                                                     <include reference="bVd-HE-5Oh"/>
                                                     <include reference="jr4-ZF-CHq"/>
+                                                    <include reference="4Om-Id-bD5"/>
+                                                    <include reference="Bt9-7x-NRx"/>
+                                                    <include reference="Sb6-YC-2HO"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -564,10 +565,11 @@
             <objects>
                 <tableViewController id="uHZ-5j-uNx" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="DvU-fa-vvc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.62934569380000005" green="0.0" blue="0.023327340500000002" alpha="1" colorSpace="calibratedRGB"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Eld-wT-tBv">
-                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <rect key="frame" x="0.0" y="585.5" width="600" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Salvar">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -845,6 +847,7 @@
                         <viewControllerLayoutGuide type="bottom" id="FnX-zv-qLM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EhF-5q-RzO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.62934569381313132" green="0.0" blue="0.023327340497398923" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
