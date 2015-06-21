@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Adicionar Materia Table View Controller-->
+        <!--Adicionar Tarefa Table View Controller-->
         <scene sceneID="anm-Mc-Jhn">
             <objects>
-                <tableViewController id="L9S-8h-ho6" customClass="AdicionarMateriaTableViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="L9S-8h-ho6" customClass="AdicionarTarefaTableViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="6U5-H4-ay7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="1851" y="-939"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Tarefa Table View Controller-->
         <scene sceneID="LBw-Gn-ThF">
             <objects>
-                <tableViewController id="MMc-zP-7G4" sceneMemberID="viewController">
+                <tableViewController id="MMc-zP-7G4" customClass="TarefaTableViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="D4l-d3-gSz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,7 +127,7 @@
         <!--Perfil-->
         <scene sceneID="W0K-Ra-GhG">
             <objects>
-                <tableViewController id="Z9G-Dm-U0d" sceneMemberID="viewController">
+                <tableViewController id="Z9G-Dm-U0d" customClass="FirstTableViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="JSB-im-NAM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,7 +230,7 @@
         <!--Editar Informações-->
         <scene sceneID="0v6-Yt-laR">
             <objects>
-                <tableViewController id="m1b-7B-WAu" sceneMemberID="viewController">
+                <tableViewController id="m1b-7B-WAu" customClass="DadosUsua_rioTableViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="67J-2q-6wm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -560,10 +560,10 @@
             </objects>
             <point key="canvasLocation" x="2486.25" y="-209"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Adicionar Materia Table View Controller-->
         <scene sceneID="1kS-cc-IJE">
             <objects>
-                <tableViewController id="uHZ-5j-uNx" sceneMemberID="viewController">
+                <tableViewController id="uHZ-5j-uNx" customClass="AdicionarMateriaTableViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="DvU-fa-vvc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
