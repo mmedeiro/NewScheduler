@@ -30,6 +30,9 @@ class AgendaViewController: UIViewController,UITableViewDataSource,UITableViewDe
         calendario.calendarioView()
         UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert | .Badge | .Sound, categories: nil))
         
+        var ntc = NSNotificationCenter.defaultCenter()
+        ntc.addObserver(self, selector: "diaSelecionado", name: "diaSelecionado", object: nil)
+        
         
     }
     
@@ -76,7 +79,7 @@ class AgendaViewController: UIViewController,UITableViewDataSource,UITableViewDe
     }
 
     //gabiarra para teste FAZER UM NOTIFICATION PARA PEGAR O DIA SELECIONADO TODA VEZ QUE MUDAMOS O DIA
-    override func  touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    func  diaSelecionado() {
         atualizaTarefas()
         tableView.reloadData()
     }
