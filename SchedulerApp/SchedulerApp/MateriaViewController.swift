@@ -21,6 +21,7 @@ class MateriaViewController: UIViewController, UITableViewDelegate,UITableViewDa
     
     
     override func viewWillAppear(animated: Bool) {
+        avaliacoes = Array<Avaliacao>()
         tdsAvaliacoes = AvaliacaoManager.sharedInstance.Avaliacao()!
         for avalacao in tdsAvaliacoes!{
             if avalacao.pertenceMateria == materia!{
