@@ -139,6 +139,10 @@ class calendarioView: UIView, UIGestureRecognizerDelegate{
         selectedDayLabel.text = format.stringFromDate(diaSelec!)
 
         selectedDay = calendar.dateFromComponents(diaSelecComp)!
+        
+        var ntc = NSNotificationCenter.defaultCenter()
+        ntc.postNotificationName("diaSelecionado", object: selectedDay)
+        
 
     }
     func voltar(){
