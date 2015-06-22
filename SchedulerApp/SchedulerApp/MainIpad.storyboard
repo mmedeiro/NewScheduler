@@ -23,6 +23,9 @@
                                 <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="salvarMateria:" destination="L9S-8h-ho6" eventType="touchUpInside" id="WjV-BU-FWJ"/>
+                            </connections>
                         </button>
                         <sections>
                             <tableViewSection headerTitle="MATÉRIA" id="KTb-Lk-qIH">
@@ -74,6 +77,9 @@
                             <outlet property="delegate" destination="L9S-8h-ho6" id="cUQ-tC-Rbi"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="materiaTextField" destination="4mJ-Ud-JTh" id="Q0m-aa-HWf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UUN-Lb-VsM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,16 +95,53 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.68235294120000001" green="0.0" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="F2h-2Y-ILi">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tarefaCell" id="F2h-2Y-ILi" customClass="TarefaTableViewCell" customModule="SchedulerApp" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F2h-2Y-ILi" id="aKN-hb-6dH">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANy-h8-H0d">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=regular" misplaced="YES">
+                                                <rect key="frame" x="92" y="11" width="42" height="21"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
                                     <color key="tintColor" red="0.68235294117647061" green="0.0" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="ANy-h8-H0d" firstAttribute="centerY" secondItem="aKN-hb-6dH" secondAttribute="centerY" id="Wtc-4D-QM6"/>
+                                        <constraint firstItem="ANy-h8-H0d" firstAttribute="leading" secondItem="aKN-hb-6dH" secondAttribute="leadingMargin" constant="77" id="qlx-jq-Pax"/>
+                                        <constraint firstItem="ANy-h8-H0d" firstAttribute="top" secondItem="aKN-hb-6dH" secondAttribute="topMargin" constant="3" id="s7d-7f-8gQ"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="ANy-h8-H0d"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="Wtc-4D-QM6"/>
+                                            <exclude reference="qlx-jq-Pax"/>
+                                            <exclude reference="s7d-7f-8gQ"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=regular">
+                                        <mask key="subviews">
+                                            <include reference="ANy-h8-H0d"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="Wtc-4D-QM6"/>
+                                            <include reference="qlx-jq-Pax"/>
+                                            <include reference="s7d-7f-8gQ"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.7690006684491979" green="0.0" blue="0.049830084185844295" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.68235294120000001" green="0.0" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="VJy-xy-Gp6" kind="show" id="aEZ-8A-dM7"/>
+                                    <outlet property="tarefa" destination="ANy-h8-H0d" id="nh9-iI-1tt"/>
+                                    <segue destination="VJy-xy-Gp6" kind="show" id="6hC-ZS-wLV"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -244,10 +287,10 @@
                                                     <exclude reference="f6c-4N-36I"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="ZMG-rx-z42"/>
                                                     <exclude reference="9qK-rG-yzD"/>
-                                                    <exclude reference="cfH-Zl-cfb"/>
                                                     <exclude reference="EbR-kK-3xq"/>
+                                                    <exclude reference="ZMG-rx-z42"/>
+                                                    <exclude reference="cfH-Zl-cfb"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=regular">
@@ -255,10 +298,10 @@
                                                     <include reference="f6c-4N-36I"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="ZMG-rx-z42"/>
                                                     <include reference="9qK-rG-yzD"/>
-                                                    <include reference="cfH-Zl-cfb"/>
                                                     <include reference="EbR-kK-3xq"/>
+                                                    <include reference="ZMG-rx-z42"/>
+                                                    <include reference="cfH-Zl-cfb"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -330,6 +373,11 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cursoAlunoLabel" destination="43B-49-QC8" id="uJE-72-c38"/>
+                        <outlet property="nomeAlunoLabel" destination="1m6-vf-H0B" id="M6W-Y1-Lvb"/>
+                        <outlet property="semestreAlunoLabel" destination="f6c-4N-36I" id="CP5-Fa-16l"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2EC-US-vIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -344,6 +392,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.62934569380000005" green="0.0" blue="0.023327340500000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="0.62934569380000005" green="0.0" blue="0.023327340500000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IEn-zF-mgz">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Salvar">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="botaoSalvarDadosUsuario:" destination="m1b-7B-WAu" eventType="touchUpInside" id="Px8-a8-8PH"/>
+                            </connections>
+                        </button>
                         <sections>
                             <tableViewSection headerTitle="" id="D9f-GK-54o">
                                 <cells>
@@ -473,6 +531,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Editar Informações" id="7Ys-la-M2U"/>
+                    <connections>
+                        <outlet property="botaoSalvarDadosUsuario" destination="IEn-zF-mgz" id="zr4-Kb-cfI"/>
+                        <outlet property="cursoUsuarioTextField" destination="ESP-wB-I0K" id="j3Q-OG-RFG"/>
+                        <outlet property="nomeUsuarioTextField" destination="R6V-nU-hjc" id="9gU-nt-IUn"/>
+                        <outlet property="semestreUsuarioTextField" destination="NVW-dN-Iq7" id="S0J-TP-F42"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vux-kG-ShM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -494,7 +558,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="myf-0u-W4D">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="myf-0u-W4D" customClass="MateriaTableViewCell" customModule="SchedulerApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="myf-0u-W4D" id="S8L-gH-v8s">
@@ -666,7 +730,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hSf-Mo-1xR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2486.25" y="-209"/>
+            <point key="canvasLocation" x="2523.75" y="-233"/>
         </scene>
         <!--Adicionar Materia Table View Controller-->
         <scene sceneID="1kS-cc-IJE">
@@ -682,6 +746,9 @@
                             <state key="normal" title="Salvar">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="salvarAvaliacao:" destination="uHZ-5j-uNx" eventType="touchUpInside" id="EVU-45-lck"/>
+                            </connections>
                         </button>
                         <sections>
                             <tableViewSection headerTitle="Tipo Avaliação" id="rmh-We-MZm">
@@ -884,6 +951,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="AtI-W9-83y"/>
+                    <connections>
+                        <outlet property="datePicker" destination="esH-as-GHi" id="T1T-dI-plt"/>
+                        <outlet property="statusAvaliacao" destination="iO3-CM-Uh1" id="Qwc-DH-cpL"/>
+                        <outlet property="textFieldNome" destination="oOE-3U-kNA" id="u4k-80-La2"/>
+                        <outlet property="textFieldNota" destination="P2z-mG-gHW" id="SEA-3G-pUJ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PTm-bY-iYg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
