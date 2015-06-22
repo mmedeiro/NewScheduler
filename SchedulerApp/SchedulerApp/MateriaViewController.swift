@@ -36,7 +36,7 @@ class MateriaViewController: UIViewController, UITableViewDelegate,UITableViewDa
 
         tarefaTableView.dataSource = self
         tarefaTableView.delegate = self
-        self.navigationItem.title = materia!.nomeMateria
+ //       self.navigationItem.title = materia!.nomeMateria
         // Do any additional setup after loading the view.
     }
 

@@ -211,10 +211,10 @@
 			isa = PBXGroup;
 			children = (
 				4BD6B33F1B25FFC600451E4C /* StoryBoardIphone.storyboard */,
+				4BBCDFF91B27570E0072F08B /* MainIpad.storyboard */,
 				4BD739FD1B2D2AEE00509E04 /* Usuário */,
 				4BD739F71B2D1CD400509E04 /* testeSalvarMateria.swift */,
 				4BCDA6BC1B2BC4C5003D8B01 /* MateriasTableViewController.swift */,
-				4BBCDFF91B27570E0072F08B /* MainIpad.storyboard */,
 			);
 			name = StoryBoards;
 			sourceTree = "<group>";
