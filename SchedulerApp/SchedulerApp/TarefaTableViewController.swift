@@ -108,6 +108,8 @@ class TarefaTableViewController: UITableViewController {
             var cell = sender as! TarefaTableViewCell
             
             mView.materia = cell.materia
+            mView.title = cell.materia?.nomeMateria
+            
             
         }
     }

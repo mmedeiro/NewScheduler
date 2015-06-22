@@ -74,7 +74,14 @@ class MateriaViewController: UIViewController, UITableViewDelegate,UITableViewDa
         cell.nomeAvaliacao.text = cell.avaliacao!.nomeAvaliacao
         cell.notaAvaliacao.text = cell.avaliacao!.notaAvaliacao as String
         cell.dataAvaliacao.text = strDate
-        cell.statusAvaliacao.text = "\(cell.avaliacao!.statusAvaliacao)"
+
+        if cell.avaliacao!.statusAvaliacao{
+            cell.statusAvaliacao.text = "Atividade Entregue"
+        }else{
+            cell.statusAvaliacao.text = "Atividade não entregue"}
+        
+        
+      //  cell.statusAvaliacao.text = "\(cell.avaliacao!.statusAvaliacao)"
         
         
         return cell

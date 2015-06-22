@@ -33,11 +33,10 @@ class AdicionarMateriaTableViewController: UITableViewController {
             avaliacao?.notaAvaliacao = textFieldNota.text
             avaliacao?.dataAvaliacao = datePicker.date
             avaliacao?.nomeAvaliacao = textFieldNome.text
-            avaliacao?.statusAvaliacao = statusAvaliacao.enabled
+            avaliacao?.statusAvaliacao = statusAvaliacao.on
             avaliacao?.pertenceMateria = materia!
             AvaliacaoManager.sharedInstance.salvar()
         }
-        
         
         var app = UILocalNotification()
         var localNotification: UILocalNotification = UILocalNotification()
