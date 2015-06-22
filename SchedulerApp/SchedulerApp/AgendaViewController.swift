@@ -17,11 +17,15 @@ class AgendaViewController: UIViewController,UITableViewDataSource,UITableViewDe
     var tdsAvaliacoes: Array<Avaliacao>?
     var avaliacoes = Array<Avaliacao>()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(animated: Bool) {
         tdsAvaliacoes = AvaliacaoManager.sharedInstance.Avaliacao()!
         
         atualizaTarefas()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
         
         tableView.dataSource = self
         tableView.delegate = self
