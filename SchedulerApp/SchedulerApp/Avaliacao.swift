@@ -17,6 +17,8 @@ class Avaliacao: NSManagedObject {
     @NSManaged var statusAvaliacao: Bool
     @NSManaged var nomeAvaliacao: String
     @NSManaged var pertenceMateria: Materia
+    @NSManaged var idCloud: String
+
     
 
 }

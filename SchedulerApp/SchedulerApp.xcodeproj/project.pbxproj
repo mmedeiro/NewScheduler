@@ -10,6 +10,7 @@
 		218097211B32897900AA7AFF /* AdicionarMateriaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218097201B32897900AA7AFF /* AdicionarMateriaTableViewController.swift */; };
 		218097231B33126A00AA7AFF /* MateriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218097221B33126A00AA7AFF /* MateriaTableViewCell.swift */; };
 		21ADD80D1B3830A600AD9678 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21ADD80C1B3830A600AD9678 /* CloudKit.framework */; };
+		21ADD80F1B38BC8200AD9678 /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ADD80E1B38BC8200AD9678 /* CloudKitHelper.swift */; };
 		4BBCDFFA1B27570E0072F08B /* MainIpad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCDFF91B27570E0072F08B /* MainIpad.storyboard */; };
 		4BBCDFFC1B2762770072F08B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCDFFB1B2762770072F08B /* ProfileViewController.swift */; };
 		4BBCDFFE1B277B0A0072F08B /* AlunoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCDFFD1B277B0A0072F08B /* AlunoManager.swift */; };
@@ -54,6 +55,7 @@
 		218097221B33126A00AA7AFF /* MateriaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MateriaTableViewCell.swift; sourceTree = "<group>"; };
 		21ADD8091B34952800AD9678 /* SchedulerApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SchedulerApp.entitlements; sourceTree = "<group>"; };
 		21ADD80C1B3830A600AD9678 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		21ADD80E1B38BC8200AD9678 /* CloudKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
 		4BBCDFF91B27570E0072F08B /* MainIpad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainIpad.storyboard; sourceTree = "<group>"; };
 		4BBCDFFB1B2762770072F08B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4BBCDFFD1B277B0A0072F08B /* AlunoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoManager.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		4BD6B32A1B25FFC600451E4C = {
 			isa = PBXGroup;
 			children = (
+				21ADD80E1B38BC8200AD9678 /* CloudKitHelper.swift */,
 				21ADD80C1B3830A600AD9678 /* CloudKit.framework */,
 				218097201B32897900AA7AFF /* AdicionarMateriaTableViewController.swift */,
 				4BEC1C7E1B2B5E0200F8C024 /* AdicionarTarefaTableViewController.swift */,
@@ -330,6 +333,7 @@
 				6EC09A851B3245070090F2F0 /* MateriaViewController.swift in Sources */,
 				4BD6B33E1B25FFC600451E4C /* ViewController.swift in Sources */,
 				4BEC1C7F1B2B5E0200F8C024 /* AdicionarTarefaTableViewController.swift in Sources */,
+				21ADD80F1B38BC8200AD9678 /* CloudKitHelper.swift in Sources */,
 				4BD6B3601B26135800451E4C /* EditProfileViewController.swift in Sources */,
 				4BD739FC1B2D26FB00509E04 /* FirstTableViewController.swift in Sources */,
 				4BBCDFFE1B277B0A0072F08B /* AlunoManager.swift in Sources */,

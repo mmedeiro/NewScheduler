@@ -13,6 +13,8 @@ import CoreData
 class Materia: NSManagedObject {
 
     @NSManaged var nomeMateria: String
+    @NSManaged var idCloud: String
+
     @NSManaged var pertenceAluno: Aluno
     @NSManaged var possuiAvaliacao: NSSet
 

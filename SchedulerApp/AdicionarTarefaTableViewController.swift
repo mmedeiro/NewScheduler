@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 
 class AdicionarTarefaTableViewController: UITableViewController, UITextFieldDelegate {
 
@@ -18,6 +19,7 @@ class AdicionarTarefaTableViewController: UITableViewController, UITextFieldDele
         materia.nomeMateria = materiaTextField.text
         
         MateriaManager.sharedInstance.salvar()
+        self.salvarNaNuvem()
         
         self.navigationController?.popToRootViewControllerAnimated(true)
 
@@ -50,6 +52,18 @@ class AdicionarTarefaTableViewController: UITableViewController, UITextFieldDele
     override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let hView = view as! UITableViewHeaderFooterView
         hView.textLabel.textColor = UIColor.whiteColor()
+    }
+    
+    func salvarNaNuvem(){
+        let cloud = CloudKitHelper()
+        let record = CKRecord(recordType: "Materia")
+        record.setObject(materiaTextField.text, forKey: "nomeMateria")
+        cloud.privateDB.saveRecord(record, completionHandler: { (savedRecord, error) -> Void in
+            
+            if error != nil{
+                println(error.localizedDescription)
+            }
+        })
     }
     
     /*

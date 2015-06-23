@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 
 class AdicionarMateriaTableViewController: UITableViewController {
     
@@ -36,6 +37,7 @@ class AdicionarMateriaTableViewController: UITableViewController {
             avaliacao?.statusAvaliacao = statusAvaliacao.on
             avaliacao?.pertenceMateria = materia!
             AvaliacaoManager.sharedInstance.salvar()
+            self.salvarNaNuvem(avaliacao!)
         }
         
         var app = UILocalNotification()
@@ -84,6 +86,26 @@ class AdicionarMateriaTableViewController: UITableViewController {
         let hView = view as! UITableViewHeaderFooterView
         hView.textLabel.textColor = UIColor.whiteColor()
     }
+    
+    func salvarNaNuvem(avaliacao: Avaliacao){
+        let cloud = CloudKitHelper()
+        
+        
+        let record = CKRecord(recordType: "Avaliacao")
+        record.setObject(avaliacao.nomeAvaliacao, forKey: "nomeAvaliacao")
+        record.setObject(avaliacao.dataAvaliacao, forKey: "dataAvaliacao")
+        record.setObject(avaliacao.notaAvaliacao, forKey: "notaAvaliacao")
+        record.setObject(avaliacao.pertenceMateria.nomeMateria, forKey: "pertenceMateria")
+        record.setObject(avaliacao.statusAvaliacao, forKey: "statusAvaliacao")
+        cloud.privateDB.saveRecord(record, completionHandler: { (savedRecord, error) -> Void in
+            
+            if error != nil{
+                println(error.localizedDescription)
+            }
+        })
+    }
+    
+    
 /*
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.

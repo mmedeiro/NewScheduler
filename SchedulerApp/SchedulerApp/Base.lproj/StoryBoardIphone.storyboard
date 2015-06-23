@@ -11,7 +11,7 @@
         <scene sceneID="2vV-lZ-jgr">
             <objects>
                 <tableViewController id="uhd-vJ-sJ9" customClass="FirstTableViewController" customModule="SchedulerApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="pmd-o2-Z1f">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="static" style="grouped" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="pmd-o2-Z1f">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.75032111644584443" green="0.012807277491713766" blue="0.029375369533325573" alpha="1" colorSpace="calibratedRGB"/>
@@ -145,7 +145,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Salvar dados online" id="0VY-Wn-XUV">
+                            <tableViewSection headerTitle="Sincronizar dados online" id="0VY-Wn-XUV">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UPD-Cu-bPA">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -154,22 +154,31 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1F-Cl-q9z">
                                                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                                    <state key="normal" title="Salvar">
+                                                    <state key="normal" title="Sincronizar">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="sincronizar:" destination="uhd-vJ-sJ9" eventType="touchUpInside" id="FVP-ZD-PcU"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Z1F-Cl-q9z" secondAttribute="trailing" id="07z-5g-SIW">
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="12"/>
+                                                </constraint>
                                                 <constraint firstAttribute="centerY" secondItem="Z1F-Cl-q9z" secondAttribute="centerY" id="BtE-oT-fuc"/>
                                                 <constraint firstItem="Z1F-Cl-q9z" firstAttribute="leading" secondItem="k6k-Ms-Cxf" secondAttribute="leadingMargin" id="L5o-Eu-Y4q"/>
+                                                <constraint firstItem="Z1F-Cl-q9z" firstAttribute="leading" secondItem="k6k-Ms-Cxf" secondAttribute="leadingMargin" id="Oja-qX-WPT"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
                                                     <exclude reference="Z1F-Cl-q9z"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <exclude reference="07z-5g-SIW"/>
                                                     <exclude reference="BtE-oT-fuc"/>
                                                     <exclude reference="L5o-Eu-Y4q"/>
+                                                    <exclude reference="Oja-qX-WPT"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -177,8 +186,10 @@
                                                     <include reference="Z1F-Cl-q9z"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <include reference="07z-5g-SIW"/>
                                                     <include reference="BtE-oT-fuc"/>
                                                     <include reference="L5o-Eu-Y4q"/>
+                                                    <include reference="Oja-qX-WPT"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>

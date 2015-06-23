@@ -8,19 +8,21 @@
     </entity>
     <entity name="Avaliacao" representedClassName="Avaliacao" syncable="YES">
         <attribute name="dataAvaliacao" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="idCloud" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nomeAvaliacao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="notaAvaliacao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="statusAvaliacao" optional="YES" attributeType="Boolean" syncable="YES"/>
         <relationship name="pertenceMateria" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Materia" inverseName="possuiAvaliacao" inverseEntity="Materia" syncable="YES"/>
     </entity>
     <entity name="Materia" representedClassName="Materia" syncable="YES">
+        <attribute name="idCloud" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nomeMateria" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="pertenceAluno" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Aluno" inverseName="possuiMateria" inverseEntity="Aluno" syncable="YES"/>
         <relationship name="possuiAvaliacao" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Avaliacao" inverseName="pertenceMateria" inverseEntity="Avaliacao" syncable="YES"/>
     </entity>
     <elements>
         <element name="Aluno" positionX="-198" positionY="-13" width="128" height="103"/>
-        <element name="Avaliacao" positionX="340" positionY="-64" width="128" height="120"/>
-        <element name="Materia" positionX="45" positionY="-139" width="128" height="88"/>
+        <element name="Avaliacao" positionX="340" positionY="-64" width="128" height="135"/>
+        <element name="Materia" positionX="45" positionY="-139" width="128" height="103"/>
     </elements>
 </model>

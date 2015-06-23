@@ -55,6 +55,16 @@ class FirstTableViewController: UITableViewController, UINavigationBarDelegate {
         hView.textLabel.textColor = UIColor.whiteColor()
     }
 
+    @IBAction func sincronizar(sender: AnyObject) {
+        let ckh = CloudKitHelper()
+        if ckh.pegaCloud(){
+            var alert = UIAlertController(title: "Sincronizado", message: "O seu Scheduler foi sincronizado com sucesso", preferredStyle: UIAlertControllerStyle.Alert)
+            var ok = UIAlertAction(title: "ok", style: UIAlertActionStyle.Default, handler: nil)
+            alert.addAction(ok)
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+        
+    }
 
 //    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 //        let cell = tableView.dequeueReusableCellWithIdentifier("Prox", forIndexPath: indexPath) as! UITableViewCell
