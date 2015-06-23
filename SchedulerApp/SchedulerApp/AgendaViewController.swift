@@ -76,6 +76,7 @@ class AgendaViewController: UIViewController,UITableViewDataSource,UITableViewDe
         
         let row = indexPath.row
         var avalacoes = avaliacoes[row] as Avaliacao
+        cell.textLabel?.textColor = UIColor.whiteColor()
         cell.textLabel?.text = avalacoes.nomeAvaliacao
         
         
