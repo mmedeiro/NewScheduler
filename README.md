@@ -1,5 +1,7 @@
 # NewScheduler
  
-Felipe Marques Ramos\n
+Felipe Marques Ramos
+
 Guilherme Antunes
+
 Mariana Medeiro
