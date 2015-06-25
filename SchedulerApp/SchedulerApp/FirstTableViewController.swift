@@ -17,12 +17,23 @@ class FirstTableViewController: UITableViewController, UINavigationBarDelegate {
     var students: Array<Aluno>?
     var student: Aluno?
     
-    
+    @IBOutlet weak var cell1: UIView!
+    @IBOutlet weak var cell2: UIView!
+    @IBOutlet weak var cell3: UIView!
+    @IBOutlet weak var cell4: UIView!
+    @IBOutlet var tableview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        cell1.backgroundColor = UIColor.whiteColor()
+        cell2.backgroundColor = UIColor.whiteColor()
+        cell3.backgroundColor = UIColor.whiteColor()
+        cell4.backgroundColor = UIColor.whiteColor()
+        tableView.backgroundColor = UIColor(red: 167.0/255.0, green: 0, blue: 0, alpha: 1)
+
+
+
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

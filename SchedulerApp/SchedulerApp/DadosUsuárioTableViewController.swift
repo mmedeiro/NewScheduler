@@ -22,6 +22,10 @@ class DadosUsua_rioTableViewController: UITableViewController, UITextFieldDelega
     
     @IBOutlet weak var botaoSalvarDadosUsuario: UIButton!
     
+    @IBOutlet weak var cell1: UIView!
+    @IBOutlet weak var cell3: UIView!
+    @IBOutlet weak var cell2: UIView!
+    
     @IBAction func botaoSalvarDadosUsuario(sender: AnyObject) {
         
         var aluno = AlunoManager.sharedInstance.novoAluno()
@@ -45,6 +49,12 @@ class DadosUsua_rioTableViewController: UITableViewController, UITextFieldDelega
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        cell3.backgroundColor = UIColor(red: 167.0/255.0, green: 0, blue: 0, alpha: 1)
+        
+        cell2.backgroundColor = UIColor(red: 167.0/255.0, green: 0, blue: 0, alpha: 1)
+        
+        cell1.backgroundColor = UIColor(red: 167.0/255.0, green: 0, blue: 0, alpha: 1)
+        
         nomeUsuarioTextField.placeholder = "Nome do aluno"
         cursoUsuarioTextField.placeholder = "Curso"
         semestreUsuarioTextField.placeholder = "Semestre Atual"
@@ -74,15 +84,17 @@ class DadosUsua_rioTableViewController: UITableViewController, UITextFieldDelega
 
 
 
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+    
+//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCellWithIdentifier("adicionarDados", forIndexPath: indexPath) as! UITableViewCell
+//
+//        // Configure the cell...
+//        
+//        cell.backgroundColor = UIColor(red: 193.0/255.0, green: 0, blue: 0, alpha: 1)
+//
+//        return cell
+//    }
 
-        // Configure the cell...
-
-        return cell
-    }
-    */
 
     /*
     // Override to support conditional editing of the table view.

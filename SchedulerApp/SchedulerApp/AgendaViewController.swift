@@ -79,6 +79,8 @@ class AgendaViewController: UIViewController,UITableViewDataSource,UITableViewDe
         cell.textLabel?.textColor = UIColor.whiteColor()
         cell.textLabel?.text = avalacoes.nomeAvaliacao
         
+        cell.backgroundColor = UIColor(red: 167.0/255.0, green: 0, blue: 0, alpha: 1)
+        
         
         return cell
     }

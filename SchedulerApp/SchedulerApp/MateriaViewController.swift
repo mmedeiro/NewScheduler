@@ -80,6 +80,8 @@ class MateriaViewController: UIViewController, UITableViewDelegate,UITableViewDa
         }else{
             cell.statusAvaliacao.text = "Atividade não entregue"}
         
+        cell.backgroundColor = UIColor(red: 193/255, green: 0, blue: 0, alpha: 1)
+        
         
       //  cell.statusAvaliacao.text = "\(cell.avaliacao!.statusAvaliacao)"
         

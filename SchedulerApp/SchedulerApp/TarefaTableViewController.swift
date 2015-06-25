@@ -18,6 +18,7 @@ class TarefaTableViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         materias = MateriaManager.sharedInstance.Materia()
         self.tableView.reloadData()
+        self.tableView.backgroundColor = UIColor(red: 193.0/255.0, green: 0, blue: 0, alpha: 1)
     }
     
     override func viewDidLoad() {
@@ -60,6 +61,7 @@ class TarefaTableViewController: UITableViewController {
         cell.materia = materias![row]
         
         cell.tarefa.text = cell.materia!.nomeMateria
+        cell.backgroundColor = UIColor(red: 193.0/255.0, green: 0, blue: 0, alpha: 1)
         
         return cell
     }

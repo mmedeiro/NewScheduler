@@ -73,6 +73,8 @@ class AdicionarMateriaTableViewController: UITableViewController {
         textFieldNome.text = nome
         textFieldNota.text = nota
         datePicker.date = data
+        textFieldNome.backgroundColor = UIColor.whiteColor()
+        textFieldNota.backgroundColor = UIColor.whiteColor()
     }
 
     override func didReceiveMemoryWarning() {
