@@ -11,7 +11,6 @@
 		218097231B33126A00AA7AFF /* MateriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218097221B33126A00AA7AFF /* MateriaTableViewCell.swift */; };
 		21ADD80D1B3830A600AD9678 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21ADD80C1B3830A600AD9678 /* CloudKit.framework */; };
 		21ADD80F1B38BC8200AD9678 /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ADD80E1B38BC8200AD9678 /* CloudKitHelper.swift */; };
-		4BBCDFFA1B27570E0072F08B /* MainIpad2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBCDFF91B27570E0072F08B /* MainIpad2.storyboard */; };
 		4BBCDFFC1B2762770072F08B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCDFFB1B2762770072F08B /* ProfileViewController.swift */; };
 		4BBCDFFE1B277B0A0072F08B /* AlunoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCDFFD1B277B0A0072F08B /* AlunoManager.swift */; };
 		4BBCE0001B277E1F0072F08B /* AvaliacaoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCDFFF1B277E1F0072F08B /* AvaliacaoManager.swift */; };
@@ -33,7 +32,6 @@
 		4BD739FA1B2D209100509E04 /* DadosUsuárioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD739F91B2D209100509E04 /* DadosUsuárioTableViewController.swift */; };
 		4BD739FC1B2D26FB00509E04 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD739FB1B2D26FB00509E04 /* FirstTableViewController.swift */; };
 		4BEC1C7F1B2B5E0200F8C024 /* AdicionarTarefaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEC1C7E1B2B5E0200F8C024 /* AdicionarTarefaTableViewController.swift */; };
-		6E082FC81B390B28005D89EF /* StoryboardIpad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E082FC71B390B28005D89EF /* StoryboardIpad.storyboard */; };
 		6EB9CCB41B27669D00D5ED5B /* calendarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9CCB31B27669D00D5ED5B /* calendarioView.swift */; };
 		6EB9CCB61B2766AC00D5ED5B /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9CCB51B2766AC00D5ED5B /* AgendaViewController.swift */; };
 		6EC09A811B30EAD60090F2F0 /* TarefaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC09A801B30EAD60090F2F0 /* TarefaTableViewController.swift */; };
@@ -57,7 +55,6 @@
 		21ADD8091B34952800AD9678 /* SchedulerApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SchedulerApp.entitlements; sourceTree = "<group>"; };
 		21ADD80C1B3830A600AD9678 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		21ADD80E1B38BC8200AD9678 /* CloudKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
-		4BBCDFF91B27570E0072F08B /* MainIpad2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainIpad2.storyboard; sourceTree = "<group>"; };
 		4BBCDFFB1B2762770072F08B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4BBCDFFD1B277B0A0072F08B /* AlunoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoManager.swift; sourceTree = "<group>"; };
 		4BBCDFFF1B277E1F0072F08B /* AvaliacaoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvaliacaoManager.swift; sourceTree = "<group>"; };
@@ -83,7 +80,6 @@
 		4BD739F91B2D209100509E04 /* DadosUsuárioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DadosUsuárioTableViewController.swift"; sourceTree = "<group>"; };
 		4BD739FB1B2D26FB00509E04 /* FirstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
 		4BEC1C7E1B2B5E0200F8C024 /* AdicionarTarefaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdicionarTarefaTableViewController.swift; sourceTree = "<group>"; };
-		6E082FC71B390B28005D89EF /* StoryboardIpad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardIpad.storyboard; sourceTree = "<group>"; };
 		6EB9CCB31B27669D00D5ED5B /* calendarioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calendarioView.swift; sourceTree = "<group>"; };
 		6EB9CCB51B2766AC00D5ED5B /* AgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
 		6EC09A801B30EAD60090F2F0 /* TarefaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarefaTableViewController.swift; sourceTree = "<group>"; };
@@ -218,8 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				4BD6B33F1B25FFC600451E4C /* StoryBoardIphone.storyboard */,
-				6E082FC71B390B28005D89EF /* StoryboardIpad.storyboard */,
-				4BBCDFF91B27570E0072F08B /* MainIpad2.storyboard */,
 				4BD739F71B2D1CD400509E04 /* testeSalvarMateria.swift */,
 				4BCDA6BC1B2BC4C5003D8B01 /* MateriasTableViewController.swift */,
 			);
@@ -313,10 +307,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BD6B3411B25FFC600451E4C /* StoryBoardIphone.storyboard in Resources */,
-				6E082FC81B390B28005D89EF /* StoryboardIpad.storyboard in Resources */,
 				4BD6B3461B25FFC600451E4C /* LaunchScreen.xib in Resources */,
 				4BD6B3431B25FFC600451E4C /* Images.xcassets in Resources */,
-				4BBCDFFA1B27570E0072F08B /* MainIpad2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
